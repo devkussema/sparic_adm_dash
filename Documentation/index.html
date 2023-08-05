@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- META DATA -->
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Description" content="Sparic - Larvel Admin Dashboard Template">
+		<meta name="Author" content="Spruko Technologies Private Limited">
+		<meta name="keywords" content="admin dashboard, admin dashboard laravel, admin panel template, blade template, blade template laravel, bootstrap template, dashboard laravel, laravel admin, laravel admin dashboard, laravel admin panel, laravel admin template, laravel bootstrap admin template, laravel bootstrap template, laravel template, vite laravel template, vite admin template, vite laravel admin, vite laravel admin dashboard, vite laravel bootstrap admin template">
+
+		<!-- TITLE -->
+		<title>Sparic – Laravel Bootstrap 5 Admin & Dashboard Template</title>
+		<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+		<link href="assets/plugins/iconfonts/icons.css" rel="stylesheet">
+
+		<!-- Custom Css -->
+		<link href="assets/css/main.css" rel="stylesheet">
+		
+		<!---Internal  Prism css-->
+		<link href="assets/plugins/prism/prism.css" rel="stylesheet">
+		<link href="assets/plugins/treeview-prism/prism.css" rel="stylesheet">
+		<link href="assets/plugins/treeview-prism/prism-treeview.css" rel="stylesheet">
+		<link href="assets/css/themes/all-themes.css" rel="stylesheet">
+	</head>
+
+	<body class="theme-blush">
+	<!-- Page Loader -->
+	<div class="page-loader-wrapper">
+		<div class="loader">
+			<div class="preloader">
+				<div class="spinner-layer pl-blush">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- #END# Page Loader -->
+
+	<!-- Overlay For Sidebars -->
+	<div class="overlay"></div>
+	<!-- #END# Overlay For Sidebars -->
+
+
+	<!-- Sidebarover lay -->
+	<div class="sidebar-overlay" data-toggle="sidebar"></div>
+	<section>
+		<!-- Left Sidebar -->
+		<aside id="leftsidebar" class="sidebar">
+			<!-- User Info -->
+			<div class="admin-image"> <img src="assets/images/logo.png" alt="" > </div>
+			<!-- Menu -->
+			<div class="menu main-sidebar">
+				<ul class="list" id="documenter_nav">
+					<li class="nav-item"><a class="nav-link" href="#documenter_cover"><i class="fa fa-hourglass-start"></i><span>Start</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#Template_Description"><i class="fe fe-airplay"></i><span>Template Description</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#Advanced_Features"><i class="fe fe-codepen"></i><span>Template Features</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#minimum_req"><i class="fa fa-check-square-o"></i><span>Minimum Requirements</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#installation"><i class="fa fa-download"></i><span>Installation</span></a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#livewire"><i class="fa fa-compress"></i><span>Livewire</span></a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#layoutSection"><i class="fa fa-th"></i><span>Layout Section</span></a></li>
+					
+					<li class="nav-item"><a class="nav-link" href="#laravelvite"><i class="fa fa-retweet"></i><span>Laravel Vite</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#InstallationInstructions"><i class="fa fa-server"></i><span>Installation Instructions</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#upgradelaravel"><i class="fa fa-level-up" aria-hidden="true"></i></i><span>Upgrade Laravel Version</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#locaLaravel"><i class="fa fa-hdd-o"></i><span>Local Host Laravel</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#version"><i class="fa fa-briefcase"></i><span>Version</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#folder_structure"><i class="fa fa-folder"></i><span>Folder Structure</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#blade_view"><i class="fa fa-bolt" aria-hidden="true"></i></i><span>Blade View</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#switcher"><i class="fa fa-gear"></i><span>Switcher</span></a></li>
+
+					<li class="nav-item custom"><a class="nav-link" href="#faqs"><i class="fa fa-question-circle"></i><span class="font-weight-bold">FAQS</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#sources"><i class="fa fa-lightbulb-o"></i><span>Sources</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#fonts"><i class="fa fa-font-awesome"></i><span>Fonts</span></a></li>
+
+					<li class="nav-item"><a class="nav-link" href="#thank_you"><i class="fa fa-smile-o"></i><span>THANK YOU!</span></a></li>
+				</ul>
+			</div>
+			<!-- #Menu -->
+		</aside>
+		<!-- #END# Left Sidebar -->
+	</section>
+
+	<section class="content home">
+		<div class="container-fluid">
+			<div class="block-header mt-3">
+				<h4><span class="text-primary">Sparic</span> - Laravel Bootstrap 5 Admin & Dashboard Template</h4>
+			</div>
+
+			<div class="">
+				<div class="alert alert-info">
+					<button type="button" class="btn-close" data-dismiss="alert" aria-hidden="true">×</button>
+					<strong>Note:-</strong>
+					<hr class="message-inner-separator">
+					<p>Please refer <b class="text-dark">Faq's </b>page in documentation itself for queries and
+						customization like Colors, RTL, Dark style..etc.</p>
+				</div>
+			</div>
+
+			<div class="row clearfix">
+				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<!-- Document -->
+					<div class="row clearfix">
+						<div class="col-sm-12 col-lg-12 col-xl-9">
+							<div class="card section" id="documenter_cover">
+								<div class="body">
+									<h5 class="mt-0 mb-2">Dashboard</h5>
+									<span class="mt-2 text-muted fs-15 font-weight-normal">Welcome to Sparic – Laravel Bootstrap5 Admin & Dashboard Template</span>
+									<div id="documenter_buttons">
+									</div>
+									<hr>
+									<ul class="documenter-list">
+										<li>Updated Date: 06/Feb/2023</li>
+										<li>Author: Spruko</li>
+										<li>Company: Spruko Technologies Private Limited</li>
+									</ul>
+									<p>Thank you for purchasing our project and being our valued customer. We hope you
+										are happy with your purchase. Feel free to contact us at any time. We have a
+										dedicated team to provide you with the best support. If you have any issues,
+										please contact the Support Help Desk at <a href="https://support.spruko.com/" target="_blank">https://support.spruko.com/</a>.</p>
+									<p class="mb-0">If You Love Our Template Design <strong>Please don't forgot to rate it.</strong> Thank you so much! </p>
+								</div>
+							</div>
+							<!-- Document -->
+
+							<!-- Introduction -->
+							<div class="card section">
+								<div class="body">
+									<h5 class="mt-0 mb-2">Introduction</h5>
+									<span class="mt-2 text-muted fs-15 font-weight-normal">Welcome to Sparic – Laravel Bootstrap 5 Admin & Dashboard Template</span>
+									<p>Sparic - Laravel Admin Template, With this template format, it's very easy to create a presence and grab someone's attention around the web page.
+										Because the template is built using Blade syntax and HTML5, CSS3, Bootstrap 5 framework and with Sass styles. So before you start working with the template please take a quick look on the documentation so that you can easily understand.</p>
+									<p class="mb-0">If You Love Our Template Design <strong>Please don't forgot to rate us.</strong> Thank you so much! 😊</p>
+								</div>
+							</div>
+						</div>
+						<!-- Introduction -->
+						<div class="col-lg-12 col-xl-3 d-none d-xl-block custom-leftnav">
+							<div class="main-content-left-components">
+								<div class="card mb-3 bg-warning-transparent border-warning shadow-none" id="license-terms2">
+									<div class="">
+										<h6><span class=""><strong class="text-danger">Important License Terms
+												</strong></span></h6>
+									</div>
+									<div class="card-body p-0">
+										<ul class="">
+											<li class="mb-2">You cannot charge from your end product end users with a
+												<strong>Regular License</strong>.
+											</li>
+											<li class="mb-2">
+												If you want to collect payments from end product end users then you
+												must buy an <strong>Extended License</strong> for each of the end product.
+											</li>
+											<li class="mb-2">
+												You must buy one license for one domain only.<strong>(i.e Either Regular or
+													Extended)</strong>
+											</li>
+											<li>
+												You cannot use Multi Domain,Multi Client, Multiple end Products with
+												any of the licenses <strong>(i.e Either Regular or Extended).</strong>
+											</li>
+										</ul>
+										<p class="mb-0">for more details <strong class="">please click the </strong><a class="" target="_blank" style="text-decoration:underline;" href="https://spruko.com/licenses-details">link</a>  </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+					<!-- Template Description -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card section" id="Template_Description">
+								<div class="body">
+									<h5 class="mt-0 mb-2">Template Description</h5>
+									<p> Sparic– is a Laravel Bootstrap5 Admin & Dashboard template using modern and minimal design. It is fully flexible user-friendly and responsive. Sparic Laravel admin template is powered with HTML 5, SASS, & Bootstrap 5 which looks great on Desktops, Tablets, and Mobile Devices. This Template Includes 100+ blade.php Pages & 50+ Plugins more UI elements . No Need to do hard work for this template customization. We already designed it and you can easily design your website just how you like it.
+										Advanced Form-Elements like Date pickers, form elements are included. This template using Bootstrap5 framework. This admin template is fully 100% Premium Admin Templates quality. This template designed for using HTML5,CSS3,Jquery. After Purchased this template you will get All PHP files,CSS, Scss and JS Files.
+									</p>
+									<p> It has super clean flat user interface admin Backend design, easy customizable components and widgets.The Template comes with a awesome unique design also we ensure you can easily design admin template.</p>
+									<p>it is a fully responsive layout for all type of devices. Works on all major web browsers, Desktop, iPhone, iPad, Tablet and all other smart phone devices</p>
+									<P class="mb-0"> Once you Purchase Sparic– is a Laravel Bootstrap5 Admin & Dashboard template,  you will be able to get free download of all future updates.</P>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Template Description -->
+
+					<!-- Advanced_Features -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card section" id="Advanced_Features">
+								<div class="body">
+									<h5 class="mt-0 mb-4">Template Features</h5>
+									<div class="row">
+										<div class="table-responsive">
+											<table class="table border text-nowrap text-md-nowrap table-bordered mb-0">
+												<tbody>
+													<tr>
+														<td>Vertical-menu</td>
+														<td>Horizontal click menu</td>
+														<td>Horizontal hover menu</td>
+														<td>RTL ready</td>
+													</tr>
+													<tr>
+														<td>100+ blade.php Pages</td>
+														<td>Bootstrap 5 Responsive Framework</td>
+														<td>Well Commented Code</td>
+														<td>24 * 7 Professional Company Support</td>
+													</tr>
+													<tr>
+														<td>Regular Updates</td>
+														<td>50+ Plugins</td>
+														<td>5 types of Charts</td>
+														<td>Select2</td>
+													</tr>
+													<tr>
+														<td>About us</td>
+														<td>Blog</td>
+														<td>File Manager</td>
+														<td>Gallery</td>
+													</tr>
+													<tr>
+														<td>Mail Inbox</td>
+														<td>Ecommerce Pages</td>
+														<td>Services Page</td>
+														<td>Blog Details</td>
+													</tr>
+													<tr>
+														<td>Calendar</td>
+														<td>Mail Inbox</td>
+														<td>11 Types of Icon sets</td>
+														<td>File upload</td>
+													</tr>
+													<tr>
+														<td>Message Chat</td>
+														<td>Form Elements</td>
+														<td>Month & Date & Year Range Pickers</td>
+														<td>FormAdvanced Elements</td>
+													</tr>
+													<tr>
+														<td>Data Tables</td>
+														<td>Lockscreen Page</td>
+														<td>Error Page</td>
+														<td>User Profile</td>
+													</tr>
+													<tr>
+														<td>Invoice Page</td>
+														<td>Advanced Pricing Tables</td>
+														<td>Easy to customize</td>
+														<td>More Widgets</td>
+													</tr>
+													<tr>
+														<td>Very Easy to Create your Own Site</td>
+														<td>Neat, clean and simple design</td>
+														<td>W3C Validated</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Advanced_Features -->
+
+					<!-- minimum requirements -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="minimum_req">
+								<div class="body">
+										<h5 class="mt-0 mb-2">Minimum Requirements</h5>
+									<div id="documenter_buttons">
+									</div>
+									<hr>
+									<ul class="documenter-list">
+										<li>PHP >= 8.1.6 or Newer </li>
+										<li>Laravel/Framework >= 9.45.1 or Newer </li>
+										<li>Livewire >= 2.10.8</li>
+										<li>BCMath PHP Extension</li> 
+										<li>Ctype PHP Extension</li> 
+										<li>DOM PHP Extension</li> 
+										<li>OpenSSL PHP Extension</li>
+										<li>Fileinfo PHP extension</li>
+										<li>PDO PHP Extension</li>
+										<li>Mbstring PHP Extension</li>
+										<li>Tokenizer PHP Extension</li>
+										<li>XML PHP Extension</li>
+										<li>JSON PHP Extension </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- minimum requirements -->
+
+					<!-- installation process of composer -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="installation">
+								<div class="body">
+									<h5 class="mt-0 mb-3">Installation Process of <b style="color:red">Composer</b> </h5>
+									<p class="mt-0 mb-0">Note: The clear documentation of PDF is given on How To Run Laravel
+										Project In Localhost -<b style="color:red"> For Beginners.</b> Please Check out the PDF
+										before running the project.</p>
+								
+									<h6 class="mt-0 mb-2">In order to run Laravel we need to install composer by the
+										following
+										steps</h6>
+									<div class="accordion mt-3">
+										<div class="accordion-header">
+											<h4> Steps to Download & Installation of Composer </h4><br>
+											<p><b>Step1:</b> Please visit the Official Web Site of the Composer
+												<a href="https://getcomposer.org/" target="_blank">www.getcomposer.org</a></p>
+											<p><b>Step2:</b>Click on the <strong>Download</strong> option</p>
+											<p><b>Step3:</b> Click on the <strong>Composer-Setup.exe</strong> you are done with
+												download</p>
+											<p><b>Step4:</b> Now Right click on the <strong>Composer-Setup.exe</strong> file and select
+												Run as administrator click on <strong>Yes</strong></p>
+											<p><b>Step5:</b> You'll be getting two options click as per your choice</p>
+											<p><b>Step6:</b> I choose Recommended option here and if your developer you can check the
+												box of the <strong>Developer Mode</strong></p>
+											<p><b>Step7:</b> And click on the <strong>Next</strong> button please make sure of
+												installation path and then click <strong>Next</strong></p>
+											<p><b>Step8:</b> You'll be asked to enter proxy url please skip the step and click on the
+												<strong>Next</strong> button</p>
+											<p><b>Step9:</b> Please make sure with the <strong>PHP Version</strong> it should not be
+												less than <strong>8.0v</strong>, here we used
+												<strong>8.1.12 Version</strong> and then click on the next button</p>
+											<p><b>Step10:</b> To confirm that <strong>Composer</strong> is installed in your system
+												then type <strong>Composer</strong> in command prompt (if you are using XAMPP
+												then go to C:\xampp\htdocs location and type composer)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- installation -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="installation">
+								<div class="body">
+									<h5 class="mt-0 mb-2">Installation Process Of<b style="color:rgb(255, 0, 0)"> Laravel
+									</b></h5>
+									<div class="body">
+										<h6 class="mt-0 mb-2">Here we are using "Composer" to download "Laravel" packages</h6>
+										<p>Note : This installation is shown based on XAMPP server..</p>
+										<div class="accordion">
+											<div class="accordion-header">
+												<ol>
+													<li>Open command prompt, find the path of your XAMPP that is installed in your system.</li>
+													<li>Go to Example:<code>C:\xampp\htdocs></code> path in command prompt.</li>
+													<li>Now type the following command line <code>composer create-project laravel/laravel my-project</code>  and hit enter to install the Laravel Packages in your "htdocs" folder.</li>
+													
+													<li>Now your downloading is started please wait for sometime to download all the necessary packages</li>
+													<li>Once you are redirected to the <code>C:\xampp\htdocs></code> path then you are sucessfully installed laravel</li><br>
+													<p> <strong>Note:</strong>  If you have any further queries in installation please refer to the official websites <a href="https://laravel.com/docs/8.x/installation" target="_blank">Click here</a></p>
+												</ol>
+											</div>
+										</div>
+										<h6>After installation run following command to get laravel development server</h6>
+										<div class="accordion">
+											<div class="accordion-header">
+												<code>php artisan serve</code>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- installation -->
+
+					<!-- livewire -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="livewire">
+								<div class="body">
+									<h5 class="mt-0 mb-2">How to install <b style="color:red">Livewire</b>
+									</h5>
+									<div class="accordion mt-3">
+										<div class="accordion-header">
+											<ol>
+												<li>Basic requirements to install <strong>Livewire</strong></li>
+												<ul class="list-unstyled">
+													<li> --> PHP 8.0.2 or higher</li>
+													<li> --> Laravel 9.19 or higher</li>
+												</ul>
+												<li>Install <strong>LiveWire</strong>  using composer.</li>
+												<li>Set your project root path in your console or terminal and type below command line.</li>
+												<code>composer require livewire/livewire</code>
+												<li class="mt-2">To create component using <strong>LiveWire</strong> set your project root path in your console and type below command line.</li>
+												<code>php artisan make:livewire example</code>
+												<li class="mt-2">Now two new files were created in your project: referral link <a href="https://laravel-livewire.com/docs/2.x/rendering-components" style="text-decoration: none;" target="_blank">LiveWire Component</a> </li>
+												<ul class="list-unstyled">
+													<code>app/Http/Livewire/example.php</code> is the <strong>Component</strong>  file and <code>resources/views/livewire/example.blade.php</code> is the <strong>View</strong> file
+													<br>
+												</ul>
+												<li class="mt-2">Here we used Livewire to create Components and View files (i.e example.php and example.blade.php files).</li>
+												<p><strong>Note:</strong>There are total 100+ php and blade.php files created by <strong>Livewire</strong>.</p>
+											</ol>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- livewire -->
+
+					<!-- structure of project -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="layoutSection">
+								<div class="body">
+									<h5 class="mt-0 mb-2">The Basic Structure Of <b style="color:red">Laravel Project</b></h5>
+									</b></h5>
+			<pre class="mt-3"> 
+				<code class="language-treeview">
+						├── app
+						├── bootstrap
+						├── config
+						├── database
+						├── lang
+						├── public
+						├── resources
+						├── routes
+						├── storage
+						├── tests
+						├── vendor
+						├── .editorconfig
+						├── .env
+						├── .env.example
+						├── .gitattributes
+						├── .gitignore
+						├── .htaccess
+						├── artisan.File
+						├── composer.json
+						├── composer.lock
+						├── package-lock.json
+						├── package.json
+						├── phpunit.xml
+						├── README.md
+						├── server.php
+						└── vite.config.js
+				</code>
+			</pre>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- structure of project -->
+
+					<!-- how to run laravelvite -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="laravelvite">
+								<div class="body">
+									<h5 class="mt-0 mb-2">How to Use <b style="color:red">Laravel Vite</b>
+									</h5>
+									<strong>In order to use laravel Vite you need to install Node.js in your system</strong>
+									<div class="accordion mt-3">
+										<div class="accordion-header">
+											<p>Recommended LTS (long term support) version of Node.js.</p>
+											<p>Download latest version of node.js from <a href="https://nodejs.org/en/">nodejs.org</a></p> 
+											<p>Install Node.js using .exe downloaded file.</p> 
+											<p>To check your node version, run node -v in a terminal/console window (cmd)</p> 
+										</div>
+									</div>
+									<strong>Now you need to install Node Modules in your project folder</strong>
+									<div class="accordion mt-3">
+										<div class="accordion">
+											<div class="accordion-header">
+												<p>1. Go to your project folder and there you will find a file called <strong>package.json</strong>.</p>
+												<p>2. Open the file in your editor and make sure that all the dependencies are correct as shown below </p>
+													<div>
+														<ul>
+															<li>"axios": "^1.1.2",</li>
+															<li>"laravel-vite-plugin": "^0.7.2",</li>
+															<li>"lodash": "^4.17.19",</li>
+															<li>"postcss": "^8.1.14",</li>
+															<li>"sass": "^1.57.1",</li>
+															<li>"apexcharts": "^3.36.3",</li>
+															<li>"vite": "^4.0.0",</li>
+															<li>"vite-plugin-static-copy": "^0.13.0"</li>
+														</ul>
+													</div>
+												<p>3. And now set your project root path in terminal or command prompt Example: <b>cd C:\Users\Admin\Desktop\my-project</b> and type the below command line.</p>
+												<code>npm install</code>
+												<p class="mt-2">4. Wait until all the dependencies are downloaded to your project folder.</p>
+												<p>5. Now you can see the downloaded folder with the name of <strong>node_modules</strong> in your project folder.</p>
+												<p>6. Now in order to <strong>Compile Assets (Vite)</strong> first, you need to run development mode.</p>
+												<p>7. Set your project root path and type the below command line.</p>
+												<code>npm run dev</code>
+												<p class="mt-2">8. Once the development mode starts you can customize your assets</p>
+												<p>9. Once you completed with the customization work you need to run your project in Production Mode 
+													in order to run Production Mode run the below command line</p>
+												<code>npm run build</code>
+											</div>
+										</div>
+									</div>
+										<div class="accordion mt-3">
+											<div class="accordion-header">
+												<div class="row clearfix">
+													<div class="col-sm-12">
+															<div class="header">
+																<h2 class="mt-0 mb-2">Assets Folder Structure</h2>
+															</div>
+			<pre>
+				<code class="language-treeview">
+					├── public/
+					|   ├── build/
+					|   |   ├── assets/
+					|   |   |   ├── iconfonts
+					|   |   |   ├── images
+					|   |   |   └── plugins
+					|   |   └── manifest.json
+					|   ├── .htaccess
+					|   ├── favicon.ico
+					|   ├── index.php
+					|   └── robots.txt
+					├── resources/
+					|   ├── assets
+					|   |   ├── css
+					|   |   ├── iconfonts
+					|   |   ├── images
+					|   |   ├── js
+					|   |   ├── plugins
+					|   |   ├── scss
+					|   |   └── switcher
+					|   ├── css
+					|   ├── js
+					|   ├── sass
+					|   ├── views
+					|   |   ├── layouts/
+					|   |   |   ├── components/
+					|   |   |   ├── app.blade.php
+					|   |   |   ├── custom-app.blade.php
+					|   |   |   ├── custom-app1.blade.php
+					|   |   |   └── switcher-app.blade.php
+					|   |   └── livewire/ (100+ blade.php files)
+					
+				</code>
+			</pre>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<!-- how to run laravelvite -->
+					
+					<!-- installation instructions -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="InstallationInstructions">
+								<div class="body">
+									<h5 class="mt-0 mb-2">Installation Instructions For both CPANEL’S and FTP </b></h5>
+									<h6 class="mt-3"><strong>Installation Instructions</strong></h6>
+									<div class="accordion mt-3">
+										<div class="accordion-header">
+											<p>Upload the Project that you have purchased in below directory based on your server</p>
+												<h6 class="mt-0 mb-2"> <strong>FTP Uploading Process</strong></h6>
+												<ol class="documenter-list">
+													<span><strong>Access FTP:</strong></span>
+													<li>Login to your FTP server using your login credentials provided by your hosting provider.</li>
+													<span><strong>Upload Project Files:</strong></span>
+													<li>Now extract the project folder that you have received, in any of your directories</li>
+													<li>Now navigate to that directory using FTP panel and upload the project in Path: public_html/ directory in your FTP server .</li>
+													<li>Once the uploading completes you can access your domain Example: www.example.com</li>
+												</ol>
+	
+											<h6><strong>cPanel Uploading Process</strong></h6>
+											<ol class="documenter-list">
+												<span><strong>Access cPanel:</strong></span>
+												<li>Login to your cPanel server using your login credentials provided by your hosting provider.</li>
+												<span><strong>Upload Project Files:</strong></span>
+												<li>Once you successfully accessed your cPanel dashboard, navigate and click on <strong>File Manager</strong></li>
+												<li>Now open <strong>public_html</strong> and click on <strong>Upload</strong></li>
+												<li>Here you can select your zipped project folder or you can simply drag and drop your zipped project folder, once the uploading is completed go back to the <strong>public_html</strong> folder </li>
+												<li>In the <strong>public_html</strong> folder, you will find your zipped project folder now you need to extract that project folder
+												</li><li>Once the extraction is completed you can access your domain Example: www.example.com</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- installation instructions -->
+
+					<!-- upgrade laravel verion -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="upgradelaravel">
+								<div class="body">
+									<h5 class="mt-0 mb-2">How to Upgrade Larvel Version</h5>
+									<p>If you want to Upgrade laravel  version, Please follow the below steps, if not you can skip this procedure.<p>
+									<h5 class="mt-0">Step 1:</h5>
+									<div class="accordion mt-2">
+										<div class="accordion-header">
+
+											<p>Replace below Dependency versions in <strong>composer.json</strong>  file which is placed in root directory</p>
+											<ul>
+											<!-- <P class="mb-0"> -->
+											<li>php:- ^8.0.2</li>
+											<li>guzzlehttp/guzzle:- ^7.2</li>
+											<li>laravel/framework:- ^9.19</li>
+											<li>nunomaduro/collision:- ^6.1</li>
+											<li>phpunit/phpunit:- ^9.5.10</li>
+											<li>laravel/tinker:- ^2.7</li>
+											<li>"livewire/livewire": "^2.10"</li>
+											</ul>
+										</div>
+									</div>
+									<h5 class="mt-3">Step 2:</h5>
+									<div class="accordion mt-2">
+										<div class="accordion-header">
+											<p class="mb-0">Delete vendor folder</p>
+										</div>
+									</div>
+									<h5 class="mt-3">Step 3:</h5>
+									<div class="accordion mt-2">
+										<div class="accordion-header">
+											<p>Set your project root path in command prompt and run the following command line in command prompt.</p>
+											<code>Composer update</code> 
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- upgrade laravel verion -->
+
+					<!-- how to run laravel project -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="locaLaravel">
+								<div class="body">
+									<h5 class="mt-0 mb-2">How to Run Laravel Project in <b style="color:red">localhost</b>
+									</h5>
+									<p>If you have installed XAMPP on your machine then please follow the below steps</p>
+									<h6 class="mt-3"><strong>Step:1 Quick view of Installations</strong></h6>
+									<div class="accordion mt-2">
+										<div class="accordion-header">
+											<p>1. Download and Install the Composer from official site <a
+													href="https://getcomposer.org/" target="_blank">https://getcomposer.org/</a></p>
+											<p>2. Install <strong>Laravel</strong> by using <strong>Composer</strong> as
+												mentioned in the installation process above. </p>
+										</div>
+									</div>
+									<h6 class="mt-3"><strong>Step:2 Run project</strong></h6>
+									<div class="accordion mt-2">
+										
+										<p>1. Extract the zip folder of the laravel project in the path: EX: C:\xampp\htdocs\ that you have received after purchase.</p>
+
+										<p>2. Once the extraction is completed, type the localhost url in the browser to access the project. Example: http://localhost/my-project/ </p>
+
+										<p>3. Another process for accessing the laravel project, open command prompt or terminal and set your project root path: Example: C:\Users\my-project </p>
+
+										<p>4. Now run the below commands in the terminal to get the output of the project.</p>
+
+										<ul class="documenter-list">
+											<li><code>npm install</code> to get the node_modules install.</li>
+											<li><code>npm run build</code> to get the build assets of the project.</li>
+											<li>And run the command line: <code> php artisan serve </code></li>
+											<li>Laravel development server started: http://127.0.0.1:8000, now type the url in the browser to access the project.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- how to run laravel project -->
+
+					<!-- version -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="version">
+								<div class="body">
+									<h5 class="mt-0 mb-2">Version</h5>
+									<ul class="feature-list">
+										<li>php:- ^8.1.12</li>
+										<li>laravel/framework:- ^9.45.1</li>
+										<li>"livewire/livewire": "^2.10.8"</li>
+										<li>guzzlehttp/guzzle:- ^7.2</li>
+										<li>laravel/tinker:- ^2.7</li>
+										<li>phpunit/phpunit:- ^9.5.10</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- version -->
+
+					<!-- folder-structure -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="folder_structure">
+								<div class="body">
+									<h5 class="mt-0 mb-2">Over All Folder Structure</h5>
+			<pre>
+				<code class="language-treeview">
+					├── app/
+					|   ├── Console
+					|   ├── Exceptions
+					|   ├── Http
+					|   |   ├── Controllers
+					|   |   ├── Livewire (100+ php files)						
+					|   |   ├── Middleware
+					|   |   └── Kernel.php
+					|   ├── Models
+					|   └── Providers
+					├── bootstrap/
+					├── config/
+					├── database/
+					├── lang/
+					├── public/
+					|   ├── build/
+					|   |   ├── assets/
+					|   |   |   ├── iconfonts
+					|   |   |   ├── images
+					|   |   |   └── plugins
+					|   |   └── manifest.json
+					|   ├── .htaccess
+					|   ├── favicon.ico
+					|   └── robots.txt
+					├── resources/
+					|   ├── assets/
+					|   ├── css/
+					|   ├── js/
+					|   ├── sass/
+					|   └── views/
+					|       ├── layouts/
+					|       |   ├── components/
+					|       |   |   ├── custom-scripts.blade.php
+					|       |   |   ├── main-footer.blade.php
+					|       |   |   ├── main-header.blade.php	
+					|       |   |   ├── main-header1.blade.php
+					|       |   |   ├── main-sidebar.blade.php
+					|       |   |   ├── news-ticker.blade.php
+					|       |   |   ├── right-sidebar.blade.php
+					|       |   |   ├── scripts.blade.php
+					|       |   |   └── switcher.blade.php
+					|       |   ├── app.blade.php 
+					|       |   ├── custom-app.blade.php
+					|       |   ├── custom-app1.blade.php
+					|       |   └── switcher-app.blade.php    
+					|       └── livewire/ (100+ blade.php files) 
+					├── routes/
+					|   ├── api.php
+					|   ├── channels.php
+					|   ├── console.php
+					|   └── web.php
+					├── storage
+					├── tests
+					├── vendor
+					├── .editorconfig
+					├── .env
+					├── .env.example
+					├── .gitattributes
+					├── .gitignore
+					├── .htaccess
+					├── artisan.php
+					├── composer.json
+					├── composer.lock					
+					├── package-lock.json
+					├── package.json
+					├── phpunit.xml
+					├── README.md
+					├── server.php
+					└── vite.config.js
+				</code>
+			</pre>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- folder-structure -->
+	
+					<!-- blade-view -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="blade_view">
+								<div class="body">
+									<h5 class="mt-0 mb-2">Blade View</h5>
+									<p> Blade is a simple, yet powerful templating engine provided with Laravel.</p>
+									<div class="accordion">
+										<div class="accordion-header ">
+											--------Imports master file--------
+											<h4>@extends('layouts.app')</h4><br />
+														
+											<h4>@section('content')</h4>
+												&nbsp;--------created a section called content--------
+											<h4>@endsection</h4><br />
+											
+											--------get content data into master file--------
+											<h4>@yield('content')</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- blade-view -->
+
+					<!--switcher-->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card  main-section" id="switcher">
+								<div class="body">
+									<h5 class="mt-0 mb-3">SWITCHER?</h5>
+									<p>If you want to add switcher to your template follow the below process.</p>
+									<div class="accordion">
+										<div class="accordion-header collapsed" data-toggle="collapse" data-target="#panel-body-color" aria-expanded="false">
+											<h4>How to add Switcher to the Template?</h4>
+										</div>
+										<div class="accordion-body border border-top-0 collapse" id="panel-body-color" data-parent="#accordion" aria-expanded="false">
+											<div class="body p-0 border">
+												<div class="bg-primary-transparent">
+													<ul class="nav nav-tabs" id="myTab" role="tablist">
+														<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#switcher-html" role="tab" aria-selected="true" data-original-title="" title="" aria-expanded="false">Switcher Code</a></li>
+														<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#switcher-icon" role="tab" aria-selected="true" data-original-title="" title="" aria-expanded="false">Switcher Icon Code</a></li>
+														<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#switcher-js" role="tab" aria-selected="true" data-original-title="" title="" aria-expanded="false">app.blade.php</a></li>
+													</ul>
+													<div class="tab-content mt-0 p-0" id="myTabContent">
+														<div class="tab-pane fade" id="switcher-html" role="tabpanel" aria-expanded="false">
+															<!-- Prism Code -->
+															<p class="p-3 mt-3 bg-white text-dark"> Go to root path: <code> resources/views/layouts/</code> open <code>"app.blade.php"</code> in that file, below the <code>body</code>, include the switcher path given below.</p>
+															<figure class="mb-0">
+															<pre class="pt-0 mt-0 line-numbers p-0 pl-3 m-0  language-markup">        <code class=" mt-0 pt-0  language-markup">
+				
+			Switcher Path:
+	
+				<span class="token comment">&lt;!-- SWITCHER --&gt;</span>
+				@include('layouts.components.switcher')
+				<span class="token comment">&lt;!-- SWITCHER --&gt;</span>
+				
+	
+			EX:	
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app sidebar-mini ltr<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+	
+				<span class="token comment">&lt;!-- SWITCHER --&gt;</span>
+				@include('layouts.components.switcher')
+				<span class="token comment">&lt;!-- SWITCHER --&gt;</span>
+				
+															<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+															</figure>
+															<!-- End Prism Precode -->
+														</div>
+	
+														<div class="tab-pane fade show active" id="switcher-icon" role="tabpanel" aria-expanded="false">
+															<p class="p-3 mt-3 bg-white text-dark"> Go to root path: <code> resources/views/layouts/</code> open <code>"app.blade.php"</code> file and then change main-header to <code>main-header1</code></p>
+															<!-- Prism Code -->
+															<figure class="mb-0">
+															<pre class=" line-numbers m-0 language-css language-markup">        <code class=" language-css language-markup">
+			Before :
+	
+					<span class="token comment">&lt;!-- MAIN-HEADER --&gt;</span>
+					@include('layouts.components.main-header')
+					<span class="token comment">&lt;!-- MAIN-HEADER --&gt;</span>
+				
+	
+			After :
+	
+					<span class="token comment">&lt;!-- MAIN-HEADER1 --&gt;</span>
+					<code>@include('layouts.components.main-header1')</code>
+					<span class="token comment">&lt;!-- MAIN-HEADER1 --&gt;</span>
+	
+															<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+															</figure>
+															<!-- End Prism Precode -->
+														</div>
+	
+														<div class="tab-pane fade" id="switcher-js" role="tabpanel" aria-expanded="false">
+															<p class="p-3 mt-3 bg-white text-dark"> Go to root path: <code> resources/views/layouts/</code> open <code>"app.blade.php"</code> file then add <code>switcher js</code> link given below.</p>
+															<!-- Prism Code -->
+															<figure class="mb-0">
+															<pre class=" line-numbers m-0 language-css language-markup">       <code class=" language-css language-markup">
+			Add SWITCHER JS:
+			
+			<span class="token comment">&lt;!-- SWITCHER JS --&gt;</span>
+			@vite('resources/assets/switcher/js/switcher.js')
+				
+			
+															<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!--for all pages closed-->
+	
+									<!--chart color-->
+									<h5 class="mt-3">Chart color</h5>
+									<p><b>NOTE: </b>If you want to change your chart colors according to the theme colors, then
+									follow the process.<b>(Skip this process if this is not your requirement).</b></p>
+									<div class="accordion">
+										<div class="accordion-header" data-toggle="collapse" data-target="#panel-body-29">
+											<h4>How to change color of any chart according to the primary color of the template ?</h4>
+										</div>
+										<div class="accordion-body collapse border border-top-0" id="panel-body-29" data-parent="#accordion">
+											<h5 class="mb-2"> Please Follow the below steps</h5>
+											<h6>Step1:</h6>
+											<p>open a js file used for that particular blade.php page and create a new function in that js file as shown below</p>
+											<span class="mb-4"><b>NOTE-1:</b> For <code>index.blade.php</code> page there is <code>index.js</code> file which is used for that particular page only. You should create function and place data for your chart in that <code>index.js</code>  you should create new function and place chart data in that js files only</span>
+											<p class="mb-3"><b>IMPORTANT:</b>If you want to place a new chart in any other page Please create new js file and create the below function</p>
+	<!-- Prism Code -->
+	<figure class="highlight clip-widget mb-0">
+	<pre title="jQuery" class="javascript" data-codetype ="JQueryku"><code class="language-javascript">
+		function chartid() {  -----------
+			--------
+			----------
+		 }
+	</code></pre>
+	</figure>
+	<!-- End Prism Precode -->
+	<span class="mb-3"><b>NOTE-2:</b>Function name should be <b>unique</b>,It is better to give the function name according to your chart id, any other names also can be used</span>
+	<h6 class="mt-3">Step2:</h6>
+	<p>Place your new chart data in the function which you created.</p>
+	<h6 class="mt-3">Step3:</h6>
+	<p>open <b>themecolor.js</b> <code>Path:(resources/assets/js/themecolor.js)</code> and paste the below code in the <code>names()</code> function in <b>(// chart colors)</b> section located at the bottom of the file.</p>
+	<!-- Prism Code --> 
+	<figure class="highlight clip-widget mb-0">
+		<pre title="jQuery" class="javascript" data-codetype ="JQueryku"><code class="language-javascript">
+			if(document.querySelector('#Your-chart-id') !== null){
+				example();
+			}
+		</code></pre>
+		</figure>
+		<!-- End Prism Precode -->
+	<p>replace (#Your-chart-id) with your new chart id & replace example(); with chartid() function which you created in step 1.</p>
+	<h6 class="mt-3">Step3:</h6>
+	<p>change in the color  <code>( myVarVal )</code> place of your chart where you want to change accordingly to the primary color of the template for example refer below code which we used in index.js file.</p>
+	</p>
+	<!-- Prism Code -->
+	<figure class="highlight clip-widget mb-0">
+		<pre title="jQuery" class="javascript" data-codetype ="JQueryku"><code class="language-javascript">
+			colors: [myVarVal],
+		</code></pre>
+		</figure>
+		<!-- End Prism Precode -->
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+					</div>
+					<!--switcher-->
+
+					
+					<!--Faqs-->
+					<div class="row clearfix">
+						<div class="col-sm-12 col-xl-13">
+							<div class="">
+								<div class="card" id="faqs">
+								<div class="header body">
+									<h5 class="mt-0">FAQS</h5>
+								</div>
+								<div class="card-body">
+									<div id="accordion">
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse" data-target="#panel-body-1">
+												<h4>1) How to Change Font Style ?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-1" data-parent="#accordion">
+												<h5 class="mt-0">Step 1:</h5>
+												<p>Go To  <b>_fonts.scss</b> <span class="text-primary ml-3"> (resources/assets/scss/custom/fonts/_fonts.scss )</span> </p>
+												<p>if you want to change another font-family Go to the site <a href="https://fonts.google.com/">Google Fonts</a> And Slect One font Family and import In to style.css file </p>
+			
+												<h4>How to Select font Family</h4>
+												<p><b>Example:</b></p>
+												<p><img alt="" src="assets/images/4.png" class="border w-100"></p>
+												<h5>Step 2:</h5>
+												<p>And paste Your Selected font-family in _fonts.scss</p>
+												<p><b>Example:</b></p>
+												@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+												<p><img alt="" src="assets/images/0-3.jpg" class="border"></p>
+												<h5>Step 3:</h5>
+												<p>And add the Your Selected font-family in _bootstrap-styles.scss(resources/assets/scss/bootstrap/_bootstrap-styles.scss)</p>
+												<p><b>Example:</b></p>
+			
+												<figure class="highlight clip-widget mb-0">
+													<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+				body {
+					font-family: 'Nunito', sans-serif;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 1.5;
+					color: $default-color;
+					text-align: start;
+					background: $background;
+				}
+				</code>
+				</pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse" data-target="#panel-body-4">
+												<h4>2) How to Change Logo ?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-4" data-parent="#accordion">
+												<p class="mb-0">Go To "<b>resources/assets/images/brand</b>" folder and replace your logo with Previous Logos within in image size.
+												note: Please don't increase logo sizes. Replace your logo within  given image size. otherwise the logo will not fit in particular place it disturbs the template design.
+											</p>
+											<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+											</div>
+										</div>
+			
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-9">
+												<h4>3) How to Enable Darktheme?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-9"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>dark-mode</code> to enable
+													dark-theme style as shown in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+					<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/***************** DARK THEME *********************/
+					// $('body').addClass('dark-mode');
+					/***************** Dark THEME *********************/
+			
+			</code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>dark-mode</code> as
+													shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+					<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/***************** DARK THEME *********************/
+					$('body').addClass('dark-mode');
+					/***************** Dark THEME *********************/
+			
+			</code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+			
+			
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-10">
+												<h4>4) How to Enable Color-Header?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-10"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>color-header</code> to enable
+													color-header style as shown in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+					<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+			
+					/*--- Color Header Start --*/
+					// $('body').addClass('color-header');
+					/*--- Color Header End --*/
+			
+			</code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>color-header</code>
+													as shown below</span>
+												<!-- Prism Code -->
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+					<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+			
+					/*--- Color Header Start --*/
+					$('body').addClass('color-header');
+					/*--- Color Header End --*/
+			
+			</code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+			
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-11">
+												<h4>5) How to Enable Dark-Header?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-11"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>dark-header</code> to enable
+													dark-header style as shown in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+					<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*--- Dark Header Start --*/
+					// $('body').addClass('dark-header');
+					/*--- Dark Header End --*/
+			</code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>dark-header</code> as
+													shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+					<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*--- Dark Header Start --*/
+					$('body').addClass('dark-header');
+					/*--- Dark Header End --*/
+			</code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-12">
+												<h4>6) How to Enable Light-Header?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-12"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>light-header</code> to enable
+													light-header style as shown in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*--- Light Header Start --*/
+					// $('body').addClass('light-header');
+					/*--- Light Header End --*/
+			</code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>light-header</code>
+													as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*--- Light Header Start --*/
+					$('body').addClass('light-header');
+					/*--- Light Header End --*/
+			</code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-68">
+												<h4>7) How to Enable Light Menu?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-68"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>light-menu</code> to enable
+													light-menu style as shown in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*--- Light Menu Start --*/
+					// $('body').addClass('light-menu');
+					/*--- Light Menu End --*/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>light-menu</code> as
+													shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*--- Light Menu Start --*/
+					$('body').addClass('light-menu');
+					/*--- Light Menu End --*/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+			
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-34445">
+												<h4>8) How to Enable Color Menu?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-34445"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>color-menu</code> to enable
+													color-menu style as shown in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*--- Color Menu Start --*/
+					// $('body').addClass('color-menu');
+					/*--- Color Menu End --*/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>color-menu</code> as
+													shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*--- Color Menu Start --*/
+					$('body').addClass('color-menu');
+					/*--- Color Menu End --*/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+			
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-3447">
+												<h4>9) How to Enable Dark Menu?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-3447"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b>
+													<code>path:(resources/assets/js/switcher-styles.js)</code>file and remove
+													comments for <code>dark-menu</code> to enable dark-menu style as shown
+													in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+													<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+			/*--- Dark Menu Start --*/
+			// $('body').addClass('dark-menu');
+			/*--- Dark Menu End --*/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>dark-menu</code> as
+													shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+													<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+			/*--- Dark Menu Start --*/
+			$('body').addClass('dark-menu');
+			/*--- Dark Menu End --*/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-15">
+												<h4>10) How to Enable Boxed-Layout?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-15"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b>
+													<code>path:(resources/assets/js/switcher-styles.js)</code>file and remove
+													comments for <code>layout-boxed</code> to enable layout-boxed style as
+													shown in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+													<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+			/*---  Boxed Layout Start --*/
+			// $('body').addClass('layout-boxed');
+			/*---  Boxed Layout End --*/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>layout-boxed</code>
+													as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+													<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+			/*---  Boxed Layout Start --*/
+			 $('body').addClass('layout-boxed');
+			/*---  Boxed Layout End --*/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-18">
+												<h4>11) How to Enable Scrollable-Layout?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-18"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>scrollable-layout</code> to enable
+													scrollable-layout style as shown in below</p>
+			
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+													<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+			/*--- Header-Position Styles Start --*/
+			// $('body').addClass('scrollable-layout');
+			/*--- Header-Position Styles End --*/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable
+													<code>scrollable-layout</code> as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+													<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+			/*--- Header-Position Styles Start --*/
+			$('body').addClass('scrollable-layout');
+			/*--- Header-Position Styles End --*/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-19">
+												<h4>12) How to Enable Sidemenu-Icon-with Text?</h4>
+											</div>
+			
+											<div class="accordion-body collapse border border-top-0" id="panel-body-19"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>sidemenu-icontext</code> to enable
+													sidemenu-icontext style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Icon-Text-Menu**/
+					// $('body').addClass('icontext-menu');
+					/**Icon-Text-Menu**/
+			
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable
+													<code>sidemenu-icontext</code> as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Icon-Text-Menu**/
+					$('body').addClass('icontext-menu');
+					/**Icon-Text-Menu**/
+			
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+			
+											</div>
+										</div>
+			
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-21">
+												<h4>13) How to Enable Closed-Menu?</h4>
+											</div>
+			
+											<div class="accordion-body collapse border border-top-0" id="panel-body-21"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>Closed Sidemenu</code> to enable
+													closed menu style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**closed-Menu**/
+					// $('body').addClass('closed-menu');
+					/**closed-Menu**/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable
+													<code>Closed Sidemenu</code> as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**closed-Menu**/
+					$('body').addClass('closed-menu');
+					/**closed-Menu**/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-20">
+												<h4>14) How to Enable Icon Overlay</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-20"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>Icon Overlay Sidemenu</code> to
+													enable Icon Overlay style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Icon-Overlay-Menu**/
+					// $('body').addClass('sideicon-menu');
+					/**Icon-Overlay-Menu**/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>sideicon-menu</code>
+													as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Icon-Overlay-Menu**/
+					$('body').addClass('sideicon-menu');
+					/**Icon-Overlay-Menu**/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-200">
+												<h4>15) How to Enable Hover Submenu</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-200"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>Hover Submenu</code> to enable Hover
+													submenu style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Hover-Sub-Menu**/
+					// $('body').addClass('hover-submenu');
+					/**Hover-Sub-Menu**/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable <code>Hover Submenu</code>
+													as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Hover-Sub-Menu**/
+					$('body').addClass('hover-submenu');
+					/**Hover-Sub-Menu**/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-201">
+												<h4>16) How to Enable Hover Submenu Style1</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-201"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>Hover Submenu Style1</code> to enable
+													Hover submenu style1 style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Hover-Sub-Menu1**/
+					// $('body').addClass('hover-submenu1');
+					/**Hover-Sub-Menu1**/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable
+													<code>Hover Submenu Style1</code> as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Hover-Sub-Menu1**/
+					$('body').addClass('hover-submenu1');
+					/**Hover-Sub-Menu1**/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-301">
+												<h4>17) How to Enable Double-menu</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-301"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>Double-menu</code> to enable
+													Double-menu style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Double-Menu**/
+					// $('body').addClass('double-menu');
+					/**Double-Menu**/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable
+													<code>Double-menu</code> as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Double-Menu**/
+						$('body').addClass('double-menu');
+					/**Double-Menu**/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-302">
+												<h4>18) How to Enable Double-menu-tabs</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-302"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>Double-menu-tabs</code> to enable
+													Double-menu-tabs style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Double-menu-tabs**/
+					// $('body').addClass('double-menu-tabs');
+					/**Double-menu-tabs**/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable
+													<code>Double-menu-tabs</code> as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Double-menu-tabs**/
+						$('body').addClass('double-menu-tabs');
+					/**Double-menu-tabs**/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-3449">
+												<h4>19) How to Enable RTL version?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-3449"
+												data-parent="#accordion">
+												<div class="">
+													<h6>One more methode to add RTL version</h6>
+													<p> open <b>swither-styles.js</b>
+														<code>path:(resources/assets/js/switcher-styles.js)</code>file . and remove
+														comments for <code>$('body').addClass('rtl')</code> to enable RTL
+														version as shown in below</p>
+			
+													<!-- Prism Code -->
+													<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*RTL Layout Style*/
+					// $('body').addClass('rtl');
+					/*RTL Layout Style End*/
+			</script></code></pre>
+													</figure>
+													<!-- End Prism Precode -->
+													<span class="mb-3">Remove the comments to enable
+														<code>$('body').addClass('rtl')</code> as shown below</span>
+													<!-- Prism Code -->
+													<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/*RTL Layout Style*/
+						$('body').addClass('rtl');
+					/*RTL Layout Style End*/
+			</script></code></pre>
+													</figure>
+													<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+													<!-- End Prism Precode -->
+												</div>
+											</div>
+			
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse" data-target="#panel-body-menu">
+												<h4>20) How to Enable Horizontalmenu?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-menu" data-parent="#accordion">
+										<div class="">
+											<p> open <b>switcher-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code> file and remove comments for <code>$('body').addClass('horizontal')</code> to enable Horizontalmenu as shown in below</p>
+			
+											<!-- Prism Code -->
+											<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/* Horizontal THEME */
+					// $('body').addClass('horizontal');
+					/* Horizontal THEME */
+				</script></code></pre>
+													</figure>
+													<!-- End Prism Precode -->
+													<span class="mb-3">Remove the comments to enable <code>$('body').addClass('horizontal')</code> as shown below</span>
+													<!-- Prism Code -->
+													<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/* Horizontal THEME */
+					// $('body').addClass('horizontal');
+					/* Horizontal THEME */
+				</script></code></pre>
+					</figure>
+					<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+				<!-- End Prism Precode -->
+				</div>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-203">
+												<h4>21) How to Enable Horizontal Hover layout</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-203"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>Horizontal Hover layout</code> to
+													enable Horizontal Hover layout style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/***************** Horizontal-Hover *********************/
+					// $('body').addClass('horizontal-hover');
+					/***************** Horizontal-Hover *********************/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable
+													<code>Horizontal Hover layout</code> as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/***************** Horizontal-Hover *********************/
+					$('body').addClass('horizontal-hover');
+					/***************** Horizontal-Hover *********************/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+			
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-222">
+												<h4>22) How to Enable Horizontal or Horizantal Hover layout With Wrap Style
+												</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-222"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and replace<code>noWrap</code> with <code>wrap</code> in
+													<code>Horizontal (or) Horizontal Hover layout</code> to enable wrap
+													style for Horizantal or Horizantal Hover</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					document.querySelector('.horizontal .side-menu').style.flexWrap = 'nowrap'
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<h6 class="my-3"><b>Related Image:</b></h6>
+												<p class="text-center"><img alt="" src="assets/images/5.png" class="border w-100"></p>
+												<h6 class="mt-3"><b>wrap style:</b></h6>
+												<span class="mb-3">Replace <code>noWrap</code> with <code>wrap</code> as
+													shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					document.querySelector('.horizontal .side-menu').style.flexWrap = 'wrap'
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<h6 class="my-3"><b>Related Image:</b></h6>
+												<p><b>Example:</b></p>
+												<p class="text-center"><img alt="" src="assets/images/6.png"
+														class="border w-100"></p>
+												<p>Simply you can change <code>noWrap</code> with <code>wrap</code>to change
+													the style of Horizontal or Horizontal Hover Menus </p>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-211">
+												<h4>23) How to Enable Horizontal Centerlogo</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-211"
+												data-parent="#accordion">
+												<p> open <b>swither-styles.js</b> <code>path:(resources/assets/js/switcher-styles.js)</code>
+													file and remove comments for <code>centerlogo-horizontal</code> to
+													enable centerlogo-horizontal style as shown in below</p>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Center-Logo**/
+					// $('body').addClass('center-logo');
+					/**Center-Logo**/
+			</script></code></pre>
+												</figure>
+												<!-- End Prism Precode -->
+												<span class="mb-3">Remove the comments to enable
+													<code>centerlogo-horizontal</code> as shown below</span>
+												<!-- Prism Code -->
+												<figure class="highlight clip-widget mb-0">
+				<pre title="jQuery" class="javascript" data-codetype="JQueryku"><code class="language-javascript">
+					/**Center-Logo**/
+					$('body').addClass('center-logo');
+					/**Center-Logo**/
+			</script></code></pre>
+												</figure>
+												<b>NOTE:</b> You must perform <code>npm run dev </code>command after changing or modifying the content in assets folder, otherwise those changes you've made will not be applied to your template.
+												<!-- End Prism Precode -->
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse" data-target="#panel-body-cookie">
+												<h4>24) How to clear LocalStorage (cookie)?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-cookie" data-parent="#accordion">
+										<div class="">
+											<h6 class="mt-3"><b>Step1:</b></h6>
+											<p> Open <b>themeColors.js</b> file <code>assets/js/themeColors.js</code></p>
+											<p>To clear LocalStorage loading functions you need to remove <b>localStorageBackup()</b> function in themeColors.js as shown below</p>
+			
+				<!-- Prism Code -->
+								<figure class="highlight clip-widget mb-0">
+										<pre title="jQuery" class="javascript  language-javascript line-numbers" data-codetype="JQueryku"><code class="  language-javascript">
+			
+			
+			<span class="token keyword">function</span> <span class="token function">localStorageBackup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token string">"use strict"</span><span class="token punctuation">;</span>
+			
+				<span class="token comment">// if there is a value stored, update color picker and background color</span>
+				<span class="token comment">// Used to retrive the data from local storage</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicprimaryColor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token comment">// document.getElementById('colorID').value = localStorage.sparicprimaryColor;</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">'--primary-bg-color'</span><span class="token punctuation">,</span> localStorage<span class="token punctuation">.</span>sparicprimaryColor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">'--primary-bg-hover'</span><span class="token punctuation">,</span> localStorage<span class="token punctuation">.</span>sparicprimaryHoverColor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">'--primary-bg-border'</span><span class="token punctuation">,</span> localStorage<span class="token punctuation">.</span>sparicprimaryBorderColor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicbgColor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			
+			
+					<span class="token comment">// document.getElementById('bgID').value = localStorage.sparicbgColor;</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">'--dark-body'</span><span class="token punctuation">,</span> localStorage<span class="token punctuation">.</span>sparicbgColor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">'--dark-theme'</span><span class="token punctuation">,</span> localStorage<span class="token punctuation">.</span>sparicthemeColor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">'light-mode'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'dark-mode'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>spariclightMode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'light-mode'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">'dark-mode'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicdarkMode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">'light-mode'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'dark-mode'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#myonoffswitch2'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">'checked'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#myonoffswitch5'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">'checked'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#myonoffswitch8'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">'checked'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparichorizontal<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'horizontal'</span><span class="token punctuation">)</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparichorizontalHover<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'horizontal-hover'</span><span class="token punctuation">)</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicrtl<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'rtl'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#myonoffswitch55'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">'checked'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicdefaultmenu<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'default-menu'</span><span class="token punctuation">)</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch13"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicclosedmenu<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'closed-menu'</span><span class="token punctuation">)</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'sidenav-toggled'</span><span class="token punctuation">)</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch30"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicicontextmenu<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'icontext-menu'</span><span class="token punctuation">)</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'sidenav-toggled'</span><span class="token punctuation">)</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch14"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicsideiconmenu<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'sideicon-menu'</span><span class="token punctuation">)</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'sidenav-toggled'</span><span class="token punctuation">)</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch15"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparichoversubmenu<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'hover-submenu'</span><span class="token punctuation">)</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'sidenav-toggled'</span><span class="token punctuation">)</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch17"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparichoversubmenu1<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'hover-submenu1'</span><span class="token punctuation">)</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'sidenav-toggled'</span><span class="token punctuation">)</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch18"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicdoublemenu<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'double-menu'</span><span class="token punctuation">)</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicdoublemenutabs<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'double-menu-tabs'</span><span class="token punctuation">)</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicboxedwidth<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'layout-boxed'</span><span class="token punctuation">)</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch10"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token keyword">if</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicscrollable<span class="token punctuation">)</span><span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'body'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'scrollable-layout'</span><span class="token punctuation">)</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch12"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token comment">// MENUS</span>
+			
+				<span class="token comment">// LIGHT MENU</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicLightmenu<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"light-menu"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch3"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token comment">// COLOR MENU</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicColormenu<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"color-menu"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch4"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token comment">// DARK MENU</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicDarkmenu<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"dark-menu"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch5"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token comment">// HEADERS</span>
+			
+				<span class="token comment">// LIGHT HEADER</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicLightheader<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"light-header"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch6"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token comment">// COLOR HEADER</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicColorheader<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"color-header"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch7"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+				<span class="token comment">// DARK HEADER</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span>sparicDarkheader<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"body"</span><span class="token punctuation">)</span><span class="token operator">?.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"dark-header"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#myonoffswitch8"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			
+								<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+									</figure>
+				<!-- End Prism Precode -->
+				<h6 class="mt-3"><b>Step2:</b></h6>
+															<p>To remove complete <b>LocalStorage</b> saving you need to remove all localstorage related calling functions in <b>themeColors.js</b> <code>assets/js/themeColors.js</code> and <b>custom.js</b> <code>assets/js/switcher-styles.js</code> files.
+																</p>
+															<p><b>LocalStorage</b> related functions like localStorage.setItem, localStorage.removeItem, localStorage.getItem, localStorage.clear. Below are the some examples to find out.
+															</p>
+															<!-- Prism Code -->
+						<figure class="highlight clip-widget mb-0">
+							<pre title="jQuery" class="javascript  language-javascript line-numbers" data-codetype="JQueryku"><code class="  language-javascript">
+				localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'spariclightMode'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+				localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">"sparicdarkMode"</span><span class="token punctuation">)</span>
+				localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">"sparicprimaryColor"</span><span class="token punctuation">)</span>
+			<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+						</figure>
+															<!-- End Prism Precode -->
+															
+					<!-- End Prism Precode -->
+											</div>
+										</div>
+										<h5 class="mt-5">Dark Theme Styles</h5>
+										<div class="accordion">
+											<div class="accordion-header" data-toggle="collapse"
+												data-target="#panel-body-02">
+												<h4>How to Change Dark default Color ,border color ,and shadow color?</h4>
+											</div>
+											<div class="accordion-body collapse border border-top-0" id="panel-body-02"
+													data-parent="#accordion">
+													<h6 class="mt-0">Please follow the below steps to change <b>Dark default
+															Color ,border color ,and shadow color</b></h6>
+													<h6 class="mt-5"><b>Step 1 :</b></h6>
+													<p>To change <b>Dark default Color ,border color ,and shadow color</b> you have to open <b>_bootstrap-styles.scss</b> file and replace what color you want as shown in below</p>
+												<p>Rootpath :  <b>_bootstrap-styles.scss</b> <span class="text-primary ml-3"> (resources/assets/scss/bootstrap/_bootstrap-styles.scss )</span> </p>
+												<img alt="" src="assets/images/0-23.jpg" class="border">
+												<h6 class="mt-3"><b>Step 2 :</b></h6>
+												<p><b>Note : </b>After Changing color you must run command i.e, <code> npm run dev</code> . </p>
+											</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header collapsed" data-toggle="collapse" data-target="#panel-theme-dark" aria-expanded="false">
+												<h4>How to Change Dark Theme Color?</h4>
+											</div>
+											<div class="accordion-body border border-top-0 collapse" id="panel-theme-dark" data-parent="#accordion" aria-expanded="false">
+												<h6 class="mt-0">Please follow the below steps to Change <b>Dark Theme Color</b></h6>
+												<h6 class="mt-3"><b>Step 1 :</b></h6>
+												<p>To change <b>Dark Theme Color</b> you have to open <b>_bootstrap-styles.scss</b> file and replace what color you want as shown in below</p>
+												<p>Rootpath :  <b>_bootstrap-styles.scss</b> <span class="text-primary ml-3"> (resources/assets/scss/bootstrap/_bootstrap-styles.scss )</span> </p>
+												<img alt="" src="assets/images/0-17.jpg" class="border">
+												<h6 class="mt-3"><b>Step 2 :</b></h6>
+												<p><b>Note : </b>After Changing color you must run command i.e, <code>npm run dev</code> . </p>
+											</div>
+										</div>
+										</div>
+										<div class="accordion">
+											<div class="accordion-header collapsed" data-toggle="collapse" data-target="#panel-body-dark" aria-expanded="false">
+												<h4>How to Change Dark Body Color?</h4>
+											</div>
+											<div class="accordion-body border border-top-0 collapse" id="panel-body-dark" data-parent="#accordion" aria-expanded="false">
+												<h6 class="mt-0">Please follow the below steps to Change <b>Dark Body Color</b></h6>
+												<h6 class="mt-3"><b>Step 1 :</b></h6>
+												<p>To change <b>Dark Body Color</b> you have to open <b>_bootstrap-styles.scss</b> file and replace what color you want as shown in below</p>
+												<p>Rootpath :  <b>_bootstrap-styles.scss</b> <span class="text-primary ml-3"> (resources/assets/scss/bootstrap/_bootstrap-styles.scss )</span> </p>
+												<img alt="" src="assets/images/0-16.jpg" class="border">
+												<h6 class="mt-3"><b>Step 2 :</b></h6>
+												<p><b>Note : </b>After Changing color you must run command i.e, <code>npm run dev</code> . </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					<!--Faqs closed-->
+
+					<!-- Sources -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="sources">
+								<div class="body">
+									<h5>Sources</h5>
+									<div class="doc-sources">
+										<ul class="mb-0">
+											<li class="text-dark fs-14">Bootstrap</li>
+											<li class="text-primary"><a href="https://getbootstrap.com/"
+												target="_blank" class="text-primary">https://getbootstrap.com/</a>
+											</li>
+											<li class="text-dark fs-14">Jquery</li>
+											<li class="text-primary"><a href="https://jquery.com"
+												target="_blank" class="text-primary">https://jquery.com/</a>
+											</li>
+											<li class="text-dark fs-14">Chartjs</li>
+											<li class="text-primary"><a href="https://www.chartjs.org/"
+												target="_blank" class="text-primary">https://www.chartjs.org/</a>
+											</li>
+											<li class="text-dark fs-14">EChartjs</li>
+											<li class="text-primary"><a href="https://echarts.apache.org/en/index.html"
+												target="_blank" class="text-primary">https://echarts.apache.org/en/index.html</a>
+											</li>
+											<li class="text-dark fs-14">Morris</li>
+											<li class="text-primary"><a href="http://morrisjs.github.io/morris.js/"
+												target="_blank" class="text-primary">http://morrisjs.github.io/morris.js/</a>
+											</li>
+											<li class="text-dark fs-14">Flotchart</li>
+											<li class="text-primary"><a href="https://www.flotcharts.org/plugins/"
+												target="_blank" class="text-primary">https://www.flotcharts.org/plugins/</a>
+											</li>
+											<li class="text-dark fs-14">Jquery-Sparkline</li>
+											<li class="text-primary"><a href="https://omnipotent.net/jquery.sparkline/#s-about"
+												target="_blank" class="text-primary">https://omnipotent.net/jquery.sparkline/#s-about</a>
+											</li>
+											<li class="text-dark fs-14">Perfect-Scrollbar</li>
+											<li class="text-primary"><a href="https://github.com/mdbootstrap/perfect-scrollbar"
+												target="_blank" class="text-primary">https://github.com/mdbootstrap/perfect-scrollbar</a>
+											</li>
+											<li class="text-dark fs-14">Datatables</li>
+											<li class="text-primary"><a href="https://datatables.net/"
+												target="_blank" class="text-primary">https://datatables.net/</a>
+											</li>
+											<li class="text-dark fs-14">Datepicker</li>
+											<li class="text-primary"><a href="https://jqueryui.com/datepicker/"
+												target="_blank" class="text-primary">https://jqueryui.com/datepicker/</a>
+											</li>
+											<li class="text-dark fs-14">Fullcalendar</li>
+											<li class="text-primary"><a href="https://fullcalendar.io"
+												target="_blank" class="text-primary">https://fullcalendar.io</a>
+											</li>
+											<li class="text-dark fs-14">Ion.RangeSlider</li>
+											<li class="text-primary"><a href="http://ionden.com/a/plugins/ion.rangeSlider/index.html"
+												target="_blank" class="text-primary">http://ionden.com/a/plugins/ion.rangeSlider/index.html</a>
+											</li>
+											<li class="text-dark fs-14">Jquery-Countdown</li>
+											<li class="text-primary"><a href="http://keith-wood.name/countdown.html"
+												target="_blank" class="text-primary">http://keith-wood.name/countdown.html</a>
+											</li>
+											<li class="text-dark fs-14">Jquery-Inputmask</li>
+											<li class="text-primary"><a href="https://robinherbots.github.io/Inputmask/"
+												target="_blank" class="text-primary">https://robinherbots.github.io/Inputmask/</a>
+											</li>
+											<li class="text-dark fs-14">Sweet-Alert</li>
+											<li class="text-primary"><a href="https://lipis.github.io/bootstrap-sweetalert/"
+												target="_blank" class="text-primary">https://lipis.github.io/bootstrap-sweetalert/</a>
+											</li>
+											<li class="text-dark fs-14">Jquery-star-Rating</li>
+											<li class="text-primary"><a href="http://antennaio.github.io/jquery-star-rating/"
+												target="_blank" class="text-primary">http://antennaio.github.io/jquery-star-rating/</a>
+											</li>
+											<li class="text-dark fs-14">Select2</li>
+											<li class="text-primary"><a href="https://select2.org/"
+												target="_blank" class="text-primary">https://select2.org/</a>
+											</li>
+											<li class="text-dark fs-14">Wysiwyag</li>
+											<li class="text-primary"><a href="https://www.jqueryscript.net/demo/Rich-Text-Editor-jQuery-RichText/"
+												target="_blank" class="text-primary">https://www.jqueryscript.net/demo/Rich-Text-Editor-jQuery-RichText/</a>
+											</li>
+											<li class="text-dark fs-14">Summernote Editor</li>
+											<li class="text-primary"><a href="https://summernote.org/"
+												target="_blank" class="text-primary">https://summernote.org/</a>
+											</li>
+
+											<li class="text-dark fs-14">Font Awesome Icons</li>
+											<li class="text-primary"><a href="https://fontawesome.com/v4.7.0/icons/" target="_blank">https://fontawesome.com/v4.7.0/icons/</a></li>
+											
+											<li class="text-dark fs-14">Material Design Icons</li>
+											<li class="text-primary"><a href="https://materialdesignicons.com/" target="_blank">https://materialdesignicons.com/</a></li>
+
+											<li class="text-dark fs-14">Simpleline Icons</i>
+											<li class="text-primary"><a href="https://simplelineicons.github.io/" target="_blank">https://simplelineicons.github.io/</a></li>
+											
+											<li class="text-dark fs-14">Feather Icons</i>
+											<li class="text-primary"><a href="https://feathericons.com/" target="_blank">https://feathericons.com/</a></li>
+											
+											<li class="text-dark fs-14">Ionic Icons</i>
+											<li class="text-primary"><a href="https://ionicons.com/" target="_blank">https://ionicons.com/</a></li>
+
+											<li class="text-dark fs-14">Pe7 Icons</i>
+											<li class="text-primary"><a href="https://themes-pixeden.com/font-demos/7-stroke/" target="_blank">https://themes-pixeden.com/font-demos/7-stroke/</a>
+											
+											<li class="text-dark fs-14">Themify Icons</i>
+											<li class="text-primary"><a href="https://themify.me/themify-icons" target="_blank">https://themify.me/themify-icons</a></li>
+											
+											<li class="text-dark fs-14">Typicons Icons</i>
+											<li class="text-primary"><a href="https://iconify.design/icon-sets/typcn/" target="_blank">https://iconify.design/icon-sets/typcn/</a></li>
+											
+											<li class="text-dark fs-14">Weather Icons</i>
+											<li class="text-primary"><a href="https://erikflowers.github.io/weather-icons/" target="_blank">https://erikflowers.github.io/weather-icons/</a></li>
+
+											<li class="text-dark fs-14">Material Icons</li>
+											<li class="text-primary"><a href="https://fonts.google.com/icons?selected=Material+Icons" target="_blank">https://fonts.google.com/icons?selected=Material+Icons</a></li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Sources -->
+
+					<!-- Fonts -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="fonts">
+								<div class="body">
+									<h5>Font Used</h5>
+									<p>Google fonts are used in the template. They are as follows: <a
+											href="https://fonts.google.com">Google Fonts </a></p>
+									<p>All Images are used: <a href="https://www.pexels.com/">Pexels.com</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Fonts -->
+
+					<!-- Thank you -->
+					<div class="row clearfix">
+						<div class="col-sm-12">
+							<div class="card" id="thank_you">
+								<div class="body">
+									<h5>THANK YOU!</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Thank you -->
+				</div>
+				<!-- col closed -->
+
+		</div>
+		<!-- row clearfix closed -->
+	</div>
+	<!-- container closed -->
+		<!-- Footer opened -->
+		<div class="main-footer ht-40">
+			<div class="pd-t-0-f ht-100p">
+				<span>Copyright &copy; 2023 <a href="javascript:void(0);">Sparic</a>. Designed by <a href="https://www.spruko.com/">Spruko</a> All rights reserved.</span>
+			</div>
+		</div>
+		<!-- Footer closed -->
+
+	</section>
+
+	<div class="color-bg">
+		<div class="sidebar__toggle" data-toggle="sidebar">
+			<a class="open-toggle" href="javascript:void(0);"><i class="fe fe-menu"></i></a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="nav-item mr-8"><a class="btn btn-info text-white" href="https://spruko.com/licenses" target="_blank"><i
+						class="icon-help2"></i>Licenses</a></li>
+			<li class="nav-item mr-8"><a class="btn btn-primary text-white" href="https://spruko.com/support" target="_blank"><i
+						class="icon-help2"></i>Support Policy</a></li>
+			<li class="nav-item"><a class="btn btn-warning mr-3" href="https://1.envato.market/MGEaN" target="_blank"><i
+						class="icon-bag3"></i> Portfolio</a></li>
+		</ul>
+	</div>
+
+	<!-- Lib Scripts Plugin Js -->
+	<script src="assets/bundles/libscripts.bundle.js"></script>
+
+	<!-- Lib Scripts Plugin Js -->
+	<script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+	<!-- Custom Js -->
+	<script src="assets/bundles/mainscripts.bundle.js"></script>
+
+	<!-- Internal Prism js-->
+	<script src="assets/plugins/prism/prism.js"></script>
+
+	<!-- Treeview js-->
+	<script src="assets/plugins/treeview-prism/prism.js"></script>
+	<script src="assets/plugins/treeview-prism/prism-treeview.js"></script>
+
+	<!-- Perfectscroll js-->
+	<script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+
+	<!-- Custom js-->
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/menuspy.min.js.js"></script>
+
+	<script>
+		var elm = document.querySelector('#main-menu');
+		var ms = new MenuSpy(elm);
+
+		(function () {
+
+		if (typeof self === 'undefined' || !self.Prism || !self.document) {
+			return;
+		}
+
+		/**
+		 * Class name for <pre> which is activating the plugin
+		 * @type {String}
+		 */
+		var PLUGIN_CLASS = 'line-numbers';
+
+		/**
+		 * Resizes line numbers spans according to height of line of code
+		 * @param  {Element} element <pre> element
+		 */
+		var _resizeElement = function (element) {
+			var codeStyles = getStyles(element);
+			var whiteSpace = codeStyles['white-space'];
+
+			if (whiteSpace === 'pre-wrap' || whiteSpace === 'pre-line') {
+				var codeElement = element.querySelector('code');
+				var lineNumbersWrapper = element.querySelector('.line-numbers-rows');
+				var lineNumberSizer = element.querySelector('.line-numbers-sizer');
+				var codeLines = element.textContent.split('\n');
+
+				if (!lineNumberSizer) {
+					lineNumberSizer = document.createElement('span');
+					lineNumberSizer.className = 'line-numbers-sizer';
+
+					codeElement.appendChild(lineNumberSizer);
+				}
+
+				lineNumberSizer.style.display = 'block';
+
+				codeLines.forEach(function (line, lineNumber) {
+					lineNumberSizer.textContent = line || '\n';
+					var lineSize = lineNumberSizer.getBoundingClientRect().height;
+					lineNumbersWrapper.children[lineNumber].style.height = lineSize + 'px';
+				});
+
+				lineNumberSizer.textContent = '';
+				lineNumberSizer.style.display = 'none';
+			}
+		};
+
+		/**
+		 * Returns style declarations for the element
+		 * @param {Element} element
+		 */
+		var getStyles = function (element) {
+			if (!element) {
+				return null;
+			}
+
+			return window.getComputedStyle ? getComputedStyle(element) : (element.currentStyle || null);
+		};
+
+		window.addEventListener('resize', function () {
+			Array.prototype.forEach.call(document.querySelectorAll('pre.' + PLUGIN_CLASS), _resizeElement);
+		});
+
+		Prism.hooks.add('complete', function (env) {
+			if (!env.code) {
+				return;
+			}
+
+			// works only for <code> wrapped inside <pre> (not inline)
+			var pre = env.element.parentNode;
+			// Original regex check for class, leaving it here
+			// for its redundancy check
+			var clsReg = /\s*\bline-numbers\b\s*/;
+			// New regex check for opt-out class
+			var clsRegB = /\s*\bno-line-numbers\b\s*/;
+
+			if (env.element.querySelector(".line-numbers-rows")) {
+				// Abort if line numbers already exists
+				return;
+			}
+
+			// Added to facilitate opting out
+			if (clsRegB.test(pre.className)) {
+				// Respect the opt-out
+				return;
+			}
+
+			if (clsReg.test(env.element.className)) {
+				// Remove the class "line-numbers" from the <code>
+				env.element.className = env.element.className.replace(clsReg, ' ');
+			}
+			if (!clsReg.test(pre.className)) {
+				// Add the class "line-numbers" to the <pre>
+				pre.className += ' line-numbers';
+			}
+
+			var match = env.code.match(/\n(?!$)/g);
+			var linesNum = match ? match.length + 1 : 1;
+			var lineNumbersWrapper;
+
+			var lines = new Array(linesNum + 1);
+			lines = lines.join('<span></span>');
+
+			lineNumbersWrapper = document.createElement('span');
+			lineNumbersWrapper.setAttribute('aria-hidden', 'true');
+			lineNumbersWrapper.className = 'line-numbers-rows';
+			lineNumbersWrapper.innerHTML = lines;
+
+			if (pre.hasAttribute('data-start')) {
+				pre.style.counterReset = 'linenumber ' + (parseInt(pre.getAttribute('data-start'), 10) - 1);
+			}
+
+			env.element.appendChild(lineNumbersWrapper);
+
+			_resizeElement(pre);
+		});
+
+	}());
+	</script>
+
+
+	</body>
+</html>
