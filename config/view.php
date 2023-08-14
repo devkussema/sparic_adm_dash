@@ -14,6 +14,7 @@ return [
     */
 
     'paths' => [
+        resource_path('views/' . env('THEME_NAME', '')),
         resource_path('views'),
     ],
 
