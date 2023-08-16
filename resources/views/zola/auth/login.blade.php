@@ -35,7 +35,7 @@
                 </div>
             @endif
             
-            <form method="POST" action="{{ route('') }}">
+            <form method="POST" action="{{ route('post.login') }}">
                 @csrf
                 <div class="uk-form-group">
                     <label class="uk-form-label"> Email ou Usuário</label>
@@ -44,7 +44,7 @@
                         <span class="uk-form-icon">
                             <i class="icon-feather-mail"></i>
                         </span>
-                        <input name="username" class="uk-input" type="text" placeholder="">
+                        <input name="email" class="uk-input" type="text" placeholder="">
                     </div>
                 </div>
 

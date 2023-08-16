@@ -20,9 +20,28 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'last_name',
+        'username',
+        'img',
+        'img_capa',
         'email',
         'password',
     ];
+
+    public static function generateUsername($firstName, $lastName)
+    {
+        // Gere o username a partir do primeiro nome e último nome
+        $username = strtolower(substr($firstName, 0, 1) . $lastName);
+        
+        // Verifique se o username já existe, se sim, adicione um número ao final
+        $baseUsername = $username;
+        $count = 1;
+        while (User::where('username', $username)->exists()) {
+            $username = $baseUsername . $count;
+            $count++;
+        }
+        
+        return $username;
+    }
 
     /**
      * The attributes that should be hidden for serialization.

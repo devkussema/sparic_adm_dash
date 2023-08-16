@@ -34,12 +34,14 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
+        $credentials = $request->only('email', 'password');
+
         $validator = Validator::make($request->all(), [
-            'username' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'max:255'],
             'password' => ['required', 'min:8']
         ], [
-            'username.required' => 'Informe um email ou nome de usuário.',
-            'username.string' => 'O nome de usuário ou email é obrigatório.',
+            'email.required' => 'Informe um email ou nome de usuário.',
+            'email.string' => 'O nome de usuário ou email é obrigatório.',
             'password.required' => 'O campo senha é obrigatório.',
             'password.min' => 'A senha deve ter pelo menos 8 caracteres.',
         ]);
@@ -84,14 +86,25 @@ class AuthController extends Controller
             return redirect()->back()->withErrors($validator)->withInput();
         }
 
+        $username = User::generateUsername($request->input('name'), $request->input('last_name'));
         User::create([
             'name' => $request->name,
             'last_name' => $request->last_name,
+            'username' => $username,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
 
         return redirect()->route('login')->with('success', 'Conta criada como sucesso!');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/')->with('success', 'Você foi desconectado com sucesso.');
     }
 
     /**

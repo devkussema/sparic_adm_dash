@@ -4,13 +4,13 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use App\Models\{
-    Post
+    User
 };
 
-use App\Providers\RouteServiceProvider;
-
-class HomeController extends Controller
+class PerfilController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,8 +19,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posts = Post::orderBy('created_at', 'desc')->get();
-        return view('feeds.feeds', compact('posts'));
+        return view('timeline.timeline');
     }
 
     /**
@@ -73,9 +72,37 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function post(Request $request, $id)
     {
-        //
+        $user = User::findOrFail($id);
+        return response()->json(['message' => 'Imagens atualizadas com sucesso.'], 200);
+    }
+    public function uploadImg(Request $request, $id)
+    {
+        try {
+            $user = User::findOrFail($id);
+
+            $request->validate([
+                'img' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+                'img_capa' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            ]);
+
+            if ($request->hasFile('img')) {
+                $imgPath = Storage::disk('public')->putFile('profile_images', $request->file('img'));
+                $user->img = $imgPath;
+            }
+
+            if ($request->hasFile('img_capa')) {
+                $imgCapaPath = Storage::disk('public')->putFile('capa_images', $request->file('img_capa'));
+                $user->img_capa = $imgCapaPath;
+            }
+
+            $user->save();
+
+            return response()->json(['message' => 'Imagens atualizadas com sucesso.'], 200);
+        } catch (\Exception $e) {
+            return response()->json(['message' => 'Erro ao atualizar imagens: ' . $e->getMessage()], 500);
+        }
     }
 
     /**

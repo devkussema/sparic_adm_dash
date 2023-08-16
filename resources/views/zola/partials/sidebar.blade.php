@@ -6,7 +6,7 @@
     <div class="sidebar-header">
         <!-- Logo-->
         <div id="logo">
-            <a href="feeds.html"> <img src="assets/images/logo-light.png" alt=""></a>
+            <a href="{{ route('home') }}"> <img src="assets/images/logo-light.png" alt=""></a>
         </div>
         <span class="btn-close" uk-toggle="target: #wrapper ; cls: collapse-sidebar mobile-visible"></span>
     </div>
@@ -18,7 +18,7 @@
             <div class="sections">
                 <ul>
                     <li class="active">
-                        <a href="feeds.html">
+                        <a href="{{ route('home') }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path fill="#047cac" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path>
                             </svg>
