@@ -374,11 +374,9 @@
                     @endif
                 </a>
 
-                <!-- profile dropdown-->
                 <div uk-dropdown="mode:click ; animation: uk-animation-slide-bottom-small"
                     class="dropdown-notifications rounded display-hidden">
 
-                    <!-- User Name / Avatar -->
                     <!-- User Name / Avatar -->
                     <a href="{{ route('perfil') }}">
 
