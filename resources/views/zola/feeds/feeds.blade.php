@@ -168,31 +168,31 @@
                         <ul class="uk-slider-items uk-child-width-1-3@m uk-grid-small uk-grid sl_pro_users">
                             <li>
                                 <a class="user" href="#">
-                                    <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                                    <img src={{ asset("assets/images/avatars/avatar-1.jpg") }} alt="">
                                     <span>Stella Johnson 1</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="user" href="#">
-                                    <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                                    <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                                     <span>Stella Johnson 2</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="user" href="#">
-                                    <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                                    <img src={{ asset("assets/images/avatars/avatar-3.jpg") }} alt="">
                                     <span>Stella Johnson 3</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="user" href="#">
-                                    <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                                    <img src={{ asset("assets/images/avatars/avatar-4.jpg") }} alt="">
                                     <span>Stella Johnson 4</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="user" href="#">
-                                    <img src="assets/images/avatars/avatar-5.jpg" alt="">
+                                    <img src={{ asset("assets/images/avatars/avatar-5.jpg") }} alt="">
                                     <span>Stella Johnson 5</span>
                                 </a>
                             </li>
@@ -211,7 +211,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                        <img src={{ asset("assets/images/avatars/avatar-1.jpg") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Jonathan Madano </a>
@@ -224,7 +224,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/avatars/avatar-6.jpg" alt="">
+                        <img src={{ asset("assets/images/avatars/avatar-6.jpg") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Monera Khalifa </a>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                        <img src={{ asset("assets/images/avatars/avatar-3.jpg") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Adrian Mohani </a>
@@ -250,7 +250,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                        <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Stella Johnson </a>
@@ -267,7 +267,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/brand/brand-avatar-3.png" alt="">
+                        <img src={{ asset("assets/images/brand/brand-avatar-3.png") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Suranna Brand </a>
@@ -281,7 +281,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/brand/brand-avatar-4.png" alt="">
+                        <img src={{ asset("assets/images/brand/brand-avatar-4.png") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Uk Brands </a>
@@ -299,7 +299,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/group/group-2.jpg" alt="">
+                        <img src={{ asset("assets/images/group/group-2.jpg") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Coffee Addicts </a>
@@ -313,7 +313,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/group/group-1.jpg" alt="">
+                        <img src={{ asset("assets/images/group/group-1.jpg") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Architecture </a>
@@ -327,7 +327,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/group/group-3.jpg" alt="">
+                        <img src={{ asset("assets/images/group/group-3.jpg") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Mountain Riders </a>
@@ -341,7 +341,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/group/group-4.jpg" alt="">
+                        <img src={{ asset("assets/images/group/group-4.jpg") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Graphic Design </a>
@@ -376,7 +376,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/brand/brand-avatar-3.png" alt="">
+                        <img src={{ asset("assets/images/brand/brand-avatar-3.png") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Suranna Brand </a>
@@ -390,7 +390,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/brand/brand-avatar-4.png" alt="">
+                        <img src={{ asset("assets/images/brand/brand-avatar-4.png") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Uk Brands </a>
@@ -404,7 +404,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/brand/brand-avatar-1.png" alt="">
+                        <img src={{ asset("assets/images/brand/brand-avatar-1.png") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Reveal Store </a>
@@ -418,7 +418,7 @@
                 </div>
                 <div class="sl_sidebar_sugs">
                     <div class="sl_sidebar_sugs_avatar">
-                        <img src="assets/images/brand/brand-avatar-2.png" alt="">
+                        <img src={{ asset("assets/images/brand/brand-avatar-2.png") }} alt="">
                     </div>
                     <div class="sl_sidebar_sugs_text">
                         <a href="#" class="sl_user_link_name"> Phase Designers </a>
@@ -480,4 +480,3 @@
 
     </div>
 @endsection
-    

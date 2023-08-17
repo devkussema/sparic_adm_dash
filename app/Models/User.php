@@ -31,7 +31,7 @@ class User extends Authenticatable
     {
         // Gere o username a partir do primeiro nome e último nome
         $username = strtolower(substr($firstName, 0, 1) . $lastName);
-        
+
         // Verifique se o username já existe, se sim, adicione um número ao final
         $baseUsername = $username;
         $count = 1;
@@ -39,8 +39,13 @@ class User extends Authenticatable
             $username = $baseUsername . $count;
             $count++;
         }
-        
+
         return $username;
+    }
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
     }
 
     /**

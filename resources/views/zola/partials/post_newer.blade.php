@@ -13,21 +13,21 @@
                             <div class="post-new-type">
                                 <a href="#">
                                     <label for="">
-                                        <img src="assets/images/icons/moderno/live.svg" alt="">
+                                        <img src={{ asset("assets/images/icons/moderno/live.svg") }} alt="">
                                         Go Live
                                     </label>
                                 </a>
                                 <a>
                                     <label for="foto_post">
-                                        <img src="assets/images/icons/moderno/photo.svg" alt="">
+                                        <img src={{ asset("assets/images/icons/moderno/photo.svg") }} alt="">
                                         Photo
                                     </label>
                                 </a>
                                 <a href="#" class="uk-visible@s">
-                                    <img src="assets/images/icons/moderno/friend.svg" alt="">
+                                    <img src={{ asset("assets/images/icons/moderno/friend.svg") }} alt="">
                                     Tag Friend
                                 </a>
-                                <a href="#"><img src="assets/images/icons/moderno/attachment.svg" alt="">
+                                <a href="#"><img src={{ asset("assets/images/icons/moderno/attachment.svg") }} alt="">
                                     Fealing
                                 </a>
                             </div>

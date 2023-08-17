@@ -21,6 +21,7 @@ Route::middleware(['auth'])->group(function() {
         Route::get('', [PerfilController::class, 'index'])->name('perfil');
         Route::post('upload/{id}', [PerfilController::class, 'uploadImg'])->name('perfil.upload');
         Route::post('upload/foto/{id}', [PerfilController::class, 'uploadFoto'])->name('perfil.upload.foto');
+        Route::get('{username}', [PerfilController::class, 'viewProfile'])->name('perfil.ver');
     });
 
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');

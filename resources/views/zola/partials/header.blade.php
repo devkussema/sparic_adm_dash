@@ -8,8 +8,8 @@
 
             <!-- Logo-->
             <div id="logo">
-            <a href="feeds.html"> <img src="assets/images/logo.png" alt=""></a>
-            <a href="feeds.html"> <img src="assets/images/logo-light.png" class="logo-inverse"
+            <a href="feeds.html"> <img src={{ asset("assets/images/logo.png") }} alt=""></a>
+            <a href="feeds.html"> <img src={{ asset("assets/images/logo-light.png") }} class="logo-inverse"
                     alt=""></a>
         </div>
 
@@ -30,22 +30,22 @@
                     <ul class="dropdown-search-list">
                         <li class="list-title"> Recent Searches </li>
                         <li> <a href="#">
-                                <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                                <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                                 <p> Erica Jones <span> 2 hours ago </span> </p>
                             </a>
                         </li>
                         <li> <a href="#">
-                                <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                                <img src={{ asset("assets/images/avatars/avatar-3.jpg") }} alt="">
                                 <p> Adrian Mohani <span> 13 days ago </span> </p>
                             </a>
                         </li>
                         <li> <a href="#">
-                                <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                                <img src={{ asset("assets/images/avatars/avatar-4.jpg") }} alt="">
                                 <p> Mountain Riders <span> 3 days ago <span>Group</span> </span> </p>
                             </a>
                         </li>
                         <li> <a href="#">
-                                <img src="assets/images/avatars/avatar-5.jpg" alt="">
+                                <img src={{ asset("assets/images/avatars/avatar-5.jpg") }} alt="">
                                 <p> Coffee Addicts <span> 12 days ago <span> Page</span></span> </p>
                             </a>
                         </li>
@@ -63,7 +63,7 @@
 
         <div class="head_user">
             <a href="{{ route('login') }}" class="opts_icon" uk-tooltip="title: Iniciar sessão ; pos: bottom ;offset:7">
-                <img src="assets/images/icons/moderno/login.svg" alt="">
+                <img src={{ asset("assets/images/icons/moderno/login.svg") }} alt="">
             </a>
         </div>
         <!-- user icons -->
@@ -73,7 +73,7 @@
 
                 <!-- browse apps  -->
                 <a href="#" class="opts_icon uk-visible@s" uk-tooltip="title: Create ; pos: bottom ;offset:7">
-                    <img src="assets/images/icons/apps.svg" alt="">
+                    <img src={{ asset("assets/images/icons/apps.svg") }} alt="">
                 </a>
 
                 <!-- browse apps dropdown -->
@@ -125,7 +125,7 @@
 
                 <!-- Message  notificiation dropdown -->
                 <a href="#" class="opts_icon" uk-tooltip="title: Messages ; pos: bottom ;offset:7">
-                    <img src="assets/images/icons/chat.svg" alt=""> <span>4</span>
+                    <img src={{ asset("assets/images/icons/chat.svg") }} alt=""> <span>4</span>
                 </a>
 
                 <!-- Message  notificiation dropdown -->
@@ -149,7 +149,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar status-online">
-                                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                                     </span>
                                     <div class="notification-text notification-msg-text">
                                         <strong>Jonathan Madano</strong>
@@ -161,7 +161,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-3.jpg") }} alt="">
                                     </span>
                                     <div class="notification-text notification-msg-text">
                                         <strong>Stella Johnson</strong>
@@ -173,7 +173,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar status-online">
-                                        <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-1.jpg") }} alt="">
                                     </span>
                                     <div class="notification-text notification-msg-text">
                                         <strong>Alex Dolgove</strong>
@@ -184,7 +184,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar status-online">
-                                        <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-4.jpg") }} alt="">
                                     </span>
                                     <div class="notification-text notification-msg-text">
                                         <strong>Adrian Mohani</strong>
@@ -195,7 +195,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                                     </span>
                                     <div class="notification-text notification-msg-text">
                                         <strong>Jonathan Madano</strong>
@@ -207,7 +207,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-3.jpg") }} alt="">
                                     </span>
                                     <div class="notification-text notification-msg-text">
                                         <strong>Stella Johnson</strong>
@@ -219,7 +219,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-1.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-1.jpg") }} alt="">
                                     </span>
                                     <div class="notification-text notification-msg-text">
                                         <strong>Alex Dolgove</strong>
@@ -230,7 +230,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-4.jpg") }} alt="">
                                     </span>
                                     <div class="notification-text notification-msg-text">
                                         <strong>Adrian Mohani</strong>
@@ -251,7 +251,7 @@
 
                 <!-- notificiation icon  -->
                 <a href="#" class="opts_icon" uk-tooltip="title: Notifications ; pos: bottom ;offset:7">
-                    <img src="assets/images/icons/bell.svg" alt=""> <span>3</span>
+                    <img src={{ asset("assets/images/icons/bell.svg") }} alt=""> <span>3</span>
                 </a>
 
 
@@ -276,7 +276,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                                     </span>
                                     <span class="notification-icon bg-gradient-primary">
                                         <i class="icon-feather-thumbs-up"></i></span>
@@ -290,7 +290,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-3.jpg") }} alt="">
                                     </span>
                                     <span class="notification-icon bg-gradient-danger">
                                         <i class="icon-feather-star"></i></span>
@@ -304,7 +304,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-4.jpg") }} alt="">
                                     </span>
                                     <span class="notification-icon bg-gradient-success">
                                         <i class="icon-feather-message-circle"></i></span>
@@ -318,7 +318,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                                     </span>
                                     <span class="notification-icon bg-gradient-primary">
                                         <i class="icon-feather-thumbs-up"></i></span>
@@ -332,7 +332,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-3.jpg") }} alt="">
                                     </span>
                                     <span class="notification-icon bg-gradient-warning">
                                         <i class="icon-feather-star"></i></span>
@@ -346,7 +346,7 @@
                             <li>
                                 <a href="#">
                                     <span class="notification-avatar">
-                                        <img src="assets/images/avatars/avatar-4.jpg" alt="">
+                                        <img src={{ asset("assets/images/avatars/avatar-4.jpg") }} alt="">
                                     </span>
                                     <span class="notification-icon bg-gradient-success">
                                         <i class="icon-feather-message-circle"></i></span>
@@ -385,7 +385,7 @@
                         <div class="dropdown-user-details">
 
                             <div class="dropdown-user-cover">
-                                <img src="assets/images/avatars/profile-cover.jpg" alt="">
+                                <img src="{{ asset('storage/' . Auth::user()->img_capa) }}" alt="">
                             </div>
                             <div class="dropdown-user-avatar">
                                 @if (Auth::user()->img)

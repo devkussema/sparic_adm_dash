@@ -50,7 +50,7 @@
         <div class="post-state-btns"> <i class="uil-bookmark"></i> 13 <span> Saved </span>
         </div>
     </div>
-    
+
     <div class="post-comments">
         <a href="#" class="view-more-comment"> Veiw 8 more Comments</a>
         <div class="post-comments-single">
@@ -197,7 +197,7 @@
         <div class="post-state-btns"> <i class="uil-bookmark"></i> 13 <span> Saved </span>
         </div>
     </div>
-    
+
     <div class="post-comments">
         <a href="#" class="view-more-comment"> Veiw 8 more Comments</a>
         <div class="post-comments-single">
@@ -295,7 +295,9 @@
                     @endif
                 </div>
                 <div class="post-title">
-                    <h4> {{ $post->user->name }} {{ $post->user->last_name }} </h4>
+                    <a href="#">
+                        <h4> {{ $post->user->name }} {{ $post->user->last_name }} </h4>
+                    </a>
                     <p> {{ timeAgo($post->created_at) }} <i class="uil-users-alt"></i> </p>
                 </div>
                 <div class="post-btn-action">
@@ -321,8 +323,8 @@
                 </p>
                 <div class="post-state-details">
                     <div>
-                        <img src="assets/images/icons/reactions_like.png" alt="">
-                        <img src="assets/images/icons/reactions_love.png" alt="">
+                        <img src={{ asset("assets/images/icons/reactions_like.png") }} alt="">
+                        <img src={{ asset("assets/images/icons/reactions_love.png") }} alt="">
                         <p> 13 </p>
                     </div>
                     <p> 24 Comments</p>
@@ -413,7 +415,9 @@
                     @endif
                 </div>
                 <div class="post-title">
-                    <h4> {{ $post->user->name }} {{ $post->user->last_name }} </h4>
+                    <a href="{{ route('perfil.ver', ['username' => $post->user->username]) }}">
+                        <h4> {{ $post->user->name }} {{ $post->user->last_name }} </h4>
+                    </a>
                     <p> {{ timeAgo($post->created_at) }} <i class="uil-users-alt"></i> </p>
                 </div>
                 <div class="post-btn-action">
@@ -439,8 +443,8 @@
 
                 <div class="post-state-details">
                     <div>
-                        <img src="assets/images/icons/reactions_like.png" alt="">
-                        <img src="assets/images/icons/reactions_love.png" alt="">
+                        <img src={{ asset("assets/images/icons/reactions_like.png") }} alt="">
+                        <img src={{ asset("assets/images/icons/reactions_love.png") }} alt="">
                         <p> 13 </p>
                     </div>
                     <p> 24 Comments</p>
@@ -459,12 +463,12 @@
                 <div class="post-state-btns"> <i class="uil-bookmark"></i> 13 <span> Saved </span>
                 </div>
             </div>
-            
-            <div class="post-comments">
+
+            <!--<div class="post-comments">
                 <a href="#" class="view-more-comment"> Veiw 8 more Comments</a>
                 <div class="post-comments-single">
                     <div class="post-comment-avatar">
-                        <img src="assets/images/avatars/avatar-5.jpg" alt="">
+                        <img src={{ asset("assets/images/avatars/avatar-5.jpg") }} alt="">
                     </div>
                     <div class="post-comment-text">
                         <div class="post-comment-text-inner">
@@ -482,7 +486,7 @@
                 </div>
                 <div class="post-comments-single">
                     <div class="post-comment-avatar">
-                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                        <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                     </div>
                     <div class="post-comment-text">
                         <div class="post-comment-text-inner">
@@ -501,7 +505,7 @@
                 </div>
                 <div class="post-comments-single">
                     <div class="post-comment-avatar">
-                        <img src="assets/images/avatars/avatar-3.jpg" alt="">
+                        <img src={{ asset("assets/images/avatars/avatar-3.jpg") }} alt="">
                     </div>
                     <div class="post-comment-text">
                         <div class="post-comment-text-inner">
@@ -526,7 +530,7 @@
 
                 <div class="post-add-comment">
                     <div class="post-add-comment-avature">
-                        <img src="assets/images/avatars/avatar-2.jpg" alt="">
+                        <img src={{ asset("assets/images/avatars/avatar-2.jpg") }} alt="">
                     </div>
                     <div class="post-add-comment-text-area">
                         <input type="text" placeholder="Write your comment...">
@@ -539,7 +543,7 @@
 
                 </div>
 
-            </div>
+            </div> -->
         </div>
     @endif
 @endforeach

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Models\{
-    User
+    User, Post
 };
 
 class PerfilController extends Controller
@@ -20,6 +20,13 @@ class PerfilController extends Controller
     public function index()
     {
         return view('timeline.timeline');
+    }
+
+    public function viewProfile($username)
+    {
+        $user = User::where('username', $username)->first();
+        $posts = $user->posts()->latest()->get();
+        return view('user.profile', compact('user', 'posts'));
     }
 
     /**

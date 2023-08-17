@@ -6,7 +6,7 @@
     <div class="sidebar-header">
         <!-- Logo-->
         <div id="logo">
-            <a href="{{ route('home') }}"> <img src="assets/images/logo-light.png" alt=""></a>
+            <a href="{{ route('home') }}"> <img src={{ asset("assets/images/logo-light.png") }} alt=""></a>
         </div>
         <span class="btn-close" uk-toggle="target: #wrapper ; cls: collapse-sidebar mobile-visible"></span>
     </div>
@@ -40,8 +40,8 @@
                                 </path>
                             </svg> Pokes </a>
                     </li>
-                   
-                   
+
+
                     <li>
                         <a href="popular-post.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
