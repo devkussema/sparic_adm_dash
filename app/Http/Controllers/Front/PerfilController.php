@@ -19,7 +19,14 @@ class PerfilController extends Controller
      */
     public function index()
     {
-        return view('timeline.timeline');
+        $user = User::find(Auth::user()->id);
+        $posts = $user->posts()->with('user')->latest()->paginate(2);
+
+        if (request()->expectsJson()) {
+            return response()->json($posts);
+        }
+
+        return view('timeline.timeline', compact('user', 'posts'));
     }
 
     public function viewProfile($username)

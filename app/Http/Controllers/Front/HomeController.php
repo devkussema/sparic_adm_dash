@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\{
-    Post
+    Post, Musica
 };
 
 use App\Providers\RouteServiceProvider;
@@ -20,7 +20,14 @@ class HomeController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at', 'desc')->get();
-        return view('feeds.feeds', compact('posts'));
+        $musicas = Musica::all();
+        return view('feeds.feeds', compact('posts', 'musicas'));
+    }
+
+    public function home()
+    {
+        $musicas = Musica::all();
+        return view('home.show', compact('musicas'));
     }
 
     /**

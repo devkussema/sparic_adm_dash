@@ -6,15 +6,22 @@ use App\Http\Controllers\Front\{
     HomeController,
     PerfilController,
     PostController,
+    MusicaController,
 };
 
 Route::middleware(['auth'])->group(function() {
-    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/', [HomeController::class, 'home'])->name('home');
+    Route::get('/feed', [HomeController::class, 'index'])->name('index');
 
     Route::prefix('post')->group(function() {
         Route::post('add', [PostController::class, 'store'])->name('post.add');
         Route::post('add/{id}', [PostController::class, 'post'])->name('post.add.img');
         Route::post('audio/add', [PostController::class, 'postAudio'])->name('post.add.audio');
+    });
+
+    Route::prefix('musicas')->group(function() {
+        Route::get('', [MusicaController::class, 'index'])->name('perfil');
+        Route::post('add', [MusicaController::class, 'store'])->name('musica.add');
     });
 
     Route::prefix('perfil')->group(function() {

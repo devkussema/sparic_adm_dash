@@ -72,20 +72,20 @@
 
 
                 <!-- browse apps  -->
-                <a href="#" class="opts_icon uk-visible@s" uk-tooltip="title: Create ; pos: bottom ;offset:7">
-                    <img src={{ asset("assets/images/icons/apps.svg") }} alt="">
+                <a href="#" class="opts_icon uk-visible@s" uk-tooltip="title: Adicionar ; pos: bottom ;offset:7">
+                    <img src={{ asset("assets/svg/add_circle_outline_black_24dp.svg") }} alt="">
                 </a>
 
                 <!-- browse apps dropdown -->
                 <div uk-dropdown="mode:click ; pos: bottom-center ; animation: uk-animation-scale-up"
                     class="icon-browse display-hidden">
-                    <a href="#" class="icon-menu-item">
+                    <a href="#" onclick="addMusica()" class="icon-menu-item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path fill="#9c27b0"
                                 d="M12,8H4A2,2 0 0,0 2,10V14A2,2 0 0,0 4,16H5V20A1,1 0 0,0 6,21H8A1,1 0 0,0 9,20V16H12L17,20V4L12,8M21.5,12C21.5,13.71 20.54,15.26 19,16V8C20.53,8.75 21.5,10.3 21.5,12Z">
                             </path>
                         </svg>
-                        Create Ad </a>
+                        Música </a>
                     <a href="#" class="icon-menu-item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path fill="#009da0"
@@ -125,7 +125,7 @@
 
                 <!-- Message  notificiation dropdown -->
                 <a href="#" class="opts_icon" uk-tooltip="title: Messages ; pos: bottom ;offset:7">
-                    <img src={{ asset("assets/images/icons/chat.svg") }} alt=""> <span>4</span>
+                    <img src={{ asset("assets/svg/message_black_24dp.svg") }} alt=""> <span>4</span>
                 </a>
 
                 <!-- Message  notificiation dropdown -->
@@ -251,7 +251,7 @@
 
                 <!-- notificiation icon  -->
                 <a href="#" class="opts_icon" uk-tooltip="title: Notifications ; pos: bottom ;offset:7">
-                    <img src={{ asset("assets/images/icons/bell.svg") }} alt=""> <span>3</span>
+                    <img src={{ asset("assets/svg/notifications_black_24dp.svg") }} alt=""> <span>3</span>
                 </a>
 
 

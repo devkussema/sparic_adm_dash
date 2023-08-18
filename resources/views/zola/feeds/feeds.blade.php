@@ -1,5 +1,7 @@
 @extends('layout.panel')
 
+@section('titulo', 'Feed de noticias')
+
 @section('conteudo')
     <div class="main_content_inner">
         <div uk-grid>
