@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\{
-    Post, Musica
+    Post, Musica, Podcast, Grupo
 };
 
 use App\Providers\RouteServiceProvider;
@@ -27,7 +27,9 @@ class HomeController extends Controller
     public function home()
     {
         $musicas = Musica::orderBy('created_at', 'desc')->get();
-        return view('home.show', compact('musicas'));
+        $podcasts = Podcast::all();
+        $grupos = Grupo::all();
+        return view('home.show', compact('grupos', 'musicas', 'podcasts'));
     }
 
     /**

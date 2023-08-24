@@ -14,6 +14,7 @@
     ================================================== -->
     <link rel="stylesheet" href={{ asset('assets/css/style.css') }}>
     <link rel="stylesheet" href="{{ asset('assets/css/uikit.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/core.css') }}">
 
     <!-- icons
     ================================================== -->
@@ -27,8 +28,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js" integrity="sha512-g0etrk7svX8WYBp+ZDIqeenmkxQSXjRDTr08ie37rVFc99iXFGxmD0/SCt3kZ6sDNmr8sR0ISHkSAc/M8rQBqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src={{ asset("assets/js/main.min.js") }}></script>
-    <script src={{ asset("assets/js/sweetalert.js") }}></script>
     <style>
         .lds-ring {
             display: inline-block;
@@ -106,9 +105,60 @@
 
             @include('partials/stories')
         </div>
+        @include('modals.modalMusica')
+        @include('modals.modalGrupo')
     </div>
 
     <script>
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            const sendMusicaForm = document.getElementById('sendMusica');
+
+            sendMusicaForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Criar um objeto FormData com os dados do formulário
+                const formData = new FormData(sendMusicaForm);
+
+                // Enviar o formulário via AJAX
+                fetch(sendMusicaForm.action, {
+                    method: sendMusicaForm.method,
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Lidar com a resposta do servidor após o envio do formulário
+                    console.log(data);
+
+                    // Você pode adicionar lógica aqui para exibir uma mensagem de sucesso ou realizar outras ações
+                })
+                .catch(error => {
+                    // Lidar com erros, se houver
+                    console.error(error);
+                });
+            });
+        });
+        $('#sendMusicaa').submit(function(e){
+            e.preventDefault();
+            const csrfToken = document.querySelector('input[name="_token"]').getAttribute('value');
+
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': csrfToken
+                },
+                success: function(response) {
+                    alert(response.message);
+                    setTimeout(function() {
+                        location.reload();
+                    }, 4000);
+                },
+                error: function(error) {
+                    alert(error.message);
+                }
+            });
+        });
         async function addMusica() {
             const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
@@ -447,8 +497,9 @@
         });
     </script>
 
-    <script src={{ asset("assets/js/uikit.js") }}></script>
-    <script src={{ asset("assets/js/simplebar.js") }}></script>
     <script src={{ asset("assets/js/custom.js") }}></script>
+    <script src={{ asset("assets/js/uikit.js") }}></script>
+    <script src={{ asset("assets/bootstrap.js") }}></script>
+    <script src={{ asset("assets/js/simplebar.js") }}></script>
 </body>
 </html>

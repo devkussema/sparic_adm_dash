@@ -77,7 +77,7 @@
                 <h3> Explorar </h3>
                 <ul>
                     <li>
-                        <a href="group.html">
+                        <a href="{{ route('grupos') }}">
                             <img src="assets/svg/groups_white_24dp.svg"> Grupos </a>
                     </li>
                     <li>

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class User extends Authenticatable
 {
@@ -46,6 +47,16 @@ class User extends Authenticatable
     public function posts()
     {
         return $this->hasMany(Post::class);
+    }
+
+    public function pedidosDeAdicao(): HasMany
+    {
+        return $this->hasMany(RequestAddGroup::class, 'user_id');
+    }
+
+    public function grupos()
+    {
+        return $this->hasMany(Membro::class);
     }
 
     /**

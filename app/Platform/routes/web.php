@@ -7,6 +7,9 @@ use App\Http\Controllers\Front\{
     PerfilController,
     PostController,
     MusicaController,
+    PodcastController,
+    GrupoController,
+    NotificacaoController,
 };
 
 Route::middleware(['auth'])->group(function() {
@@ -22,6 +25,23 @@ Route::middleware(['auth'])->group(function() {
     Route::prefix('musicas')->group(function() {
         Route::get('', [MusicaController::class, 'index'])->name('perfil');
         Route::post('add', [MusicaController::class, 'store'])->name('musica.add');
+    });
+    
+    Route::prefix('podcasts')->group(function() {
+        Route::get('', [PodcastController::class, 'index'])->name('podcasts');
+        Route::post('add', [PodcastController::class, 'store'])->name('podcast.add');
+    });
+
+    Route::prefix('notificacao')->group(function() {
+        Route::get('get', [NotificacaoController::class, 'getNotificacoesUsuarioAtual']);
+    });
+
+    Route::prefix('grupos')->group(function() {
+        Route::get('', [GrupoController::class, 'index'])->name('grupos');
+        Route::post('add', [GrupoController::class, 'store'])->name('grupo.add');
+        Route::post('sair/{grupo_id}', [GrupoController::class, 'sair'])->name('grupo.sair');
+        Route::post('aderir/{id}/{grupo_id}', [GrupoController::class, 'join'])->name('grupo.join');
+        Route::post('cancelar/{id}/{grupo_id}', [GrupoController::class, 'cancelarJoin'])->name('grupo.cancelarJoin');
     });
 
     Route::prefix('perfil')->group(function() {
