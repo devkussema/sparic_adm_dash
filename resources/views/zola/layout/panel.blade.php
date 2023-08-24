@@ -27,6 +27,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js" integrity="sha512-g0etrk7svX8WYBp+ZDIqeenmkxQSXjRDTr08ie37rVFc99iXFGxmD0/SCt3kZ6sDNmr8sR0ISHkSAc/M8rQBqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src={{ asset("assets/js/main.min.js") }}></script>
+    <script src={{ asset("assets/js/sweetalert.js") }}></script>
     <style>
         .lds-ring {
             display: inline-block;
@@ -64,6 +66,12 @@
             }
         }
 
+        figcaption #onda
+        {
+            background-color: red;
+            width: 80%;
+            height: 30%;
+        }
     </style>
 </head>
 <body>

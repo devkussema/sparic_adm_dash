@@ -26,7 +26,7 @@ class HomeController extends Controller
 
     public function home()
     {
-        $musicas = Musica::all();
+        $musicas = Musica::orderBy('created_at', 'desc')->get();
         return view('home.show', compact('musicas'));
     }
 
