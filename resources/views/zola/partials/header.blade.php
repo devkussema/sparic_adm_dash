@@ -95,9 +95,12 @@
                         Tornar artista </a>
                     <a href="#" class="icon-menu-item"
                         data-bs-toggle="modal"
-                        data-bs-target="#backDropModal">
+                        data-bs-target="#exampleModalToggle">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="#f79f58" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm6.46,12.74A9.76,9.76,0,0,1,12,21a9.76,9.76,0,0,1-6.46-2.26A8,8,0,0,0,12,18a8,8,0,0,0,6.46-1.26Zm-4.24-1.07a5.92,5.92,0,0,0-2.9-.76A6,6,0,0,0,5.28,8.76,4.66,4.66,0,0,0,5.5,6,6,6,0,1,0,16,16,6,6,0,0,0,14.22,13.67Z"></path>
+                            <path fill="#009da0"
+                                d="M18,20H6V18H4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V18H18V20M14,2H6A2,2 0 0,0 4,4V12H6V4H14V8H18V12H20V8L14,2M11,16H8V14H11V16M16,16H13V14H16V16M3,14H6V16H3V14M21,16H18V14H21V16Z">
+                                <circle cx="12" cy="12" r="10" fill="none" stroke="#fff" stroke-width="2"/>
+                            </path>
                         </svg>
                         Exemplo </a>
                     <a href="#" class="icon-menu-item"

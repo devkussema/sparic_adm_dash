@@ -71,7 +71,9 @@
             width: 80%;
             height: 30%;
         }
+        
     </style>
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 </head>
 <body>
 
@@ -99,18 +101,158 @@
             </form>-->
 
             @yield('conteudo')
-
-            <!-- Chat sidebar -->
-            @include('partials/chat_sidebar')
-
-            @include('partials/stories')
+            <div class="audio-player">
+                <div class="contentor">
+                    <div class="img-fluid">
+                        <img class="img-cantor" src="{{ asset('assets/images/avatars/avatar-1.jpg') }}">
+                    </div>
+                    <audio id="myAudio">
+                        <source src="gg.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <button id="playButton">Play</button>
+                    <button id="pauseButton">Pause</button>
+                    <div id="progressBar">
+                        <div id="progress" style="width: 0;"></div>
+                    </div>
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.02" value="1">
+                    <span id="currentTime">0:00</span>
+                </div>
+            </div>
         </div>
-        @include('modals.modalMusica')
-        @include('modals.modalGrupo')
+        <!-- Chat sidebar -->
+        @include('partials/chat_sidebar')
+        @include('partials/stories')
     </div>
+    <div class="modal fade" id="exampleModalToggle" data-bs-backdrop="static" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Gravar Podcast</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Show a second modal and hide this one with the button below.
+                <audio id="myAudioRadio" controls>
+                    <source src="" type="audio/wav">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <button id="startRecordingRadioButton">Iniciar Gravação</button>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Open second modal</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Hide this modal and show the first with the button below.
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+      @include('modals.modalMusica')
+    @include('modals.modalGrupo')
 
     <script>
-        
+        const audioElement = document.getElementById('myAudioRadio');
+        const startRecordingButton = document.getElementById('startRecordingRadioButton');
+        const modalAlert = document.getElementById('exampleModalToggle');
+
+        let mediaRecorder;
+        let audioChunks = [];
+
+        // Função para iniciar a gravação
+        startRecordingButton.addEventListener('click', () => {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(function (stream) {
+                    mediaRecorder = new MediaRecorder(stream);
+
+                    mediaRecorder.ondataavailable = function (event) {
+                        if (event.data.size > 0) {
+                            audioChunks.push(event.data);
+                        }
+                    };
+
+                    mediaRecorder.onstop = function () {
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                        const audioUrl = URL.createObjectURL(audioBlob);
+                        audioElement.src = audioUrl;
+
+                        // Reproduzir o áudio gravado automaticamente
+                        audioElement.play();
+
+                        // Limpar os chunks
+                        audioChunks = [];
+                    };
+
+                    mediaRecorder.start();
+                })
+                .catch(function (error) {
+                    $(modalAlert).modal('hide');
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Erro',
+                        text: 'Erro ao acessar o microfone: '+ error
+                    });
+                    console.error('Erro ao acessar o microfone:', error);
+                });
+        });
+
+        // Função para parar a gravação
+        audioElement.addEventListener('ended', () => {
+            mediaRecorder.stop();
+        });
+
+        /* ======== */
+        const audio = document.getElementById('myAudio');
+        const playButton = document.getElementById('playButton');
+        const pauseButton = document.getElementById('pauseButton');
+        const volumeSlider = document.getElementById('volumeSlider');
+        const currentTime = document.getElementById('currentTime');
+        const progressBar = document.getElementById('progressBar');
+        const progress = document.getElementById('progress');
+
+        playButton.addEventListener('click', () => {
+            audio.play();
+        });
+
+        pauseButton.addEventListener('click', () => {
+            audio.pause();
+        });
+
+        volumeSlider.addEventListener('input', () => {
+            audio.volume = volumeSlider.value;
+        });
+
+        progressBar.addEventListener('click', (e) => {
+            const clickX = e.clientX - progressBar.getBoundingClientRect().left;
+            const progressBarWidth = progressBar.offsetWidth;
+            const seekTime = (clickX / progressBarWidth) * audio.duration;
+            audio.currentTime = seekTime;
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            const minutes = Math.floor(audio.currentTime / 60);
+            const seconds = Math.floor(audio.currentTime % 60);
+            currentTime.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+            const progressValue = (audio.currentTime / audio.duration) * 100;
+            progress.style.width = progressValue + '%';
+        });
+
+
         document.addEventListener('DOMContentLoaded', function () {
             const sendMusicaForm = document.getElementById('sendMusica');
 

@@ -6,7 +6,7 @@
         <!-- column one -->
         <div class="uk-margin-auto-vertical uk-text-center uk-animation-scale-up p-3 uk-light">
             <img src="assets/images/logo-light-icon.png" alt="">
-            <h3 class="mb-3 mt-lg-4"> Simplest</h3>
+            <h3 class="mb-3 mt-lg-4"> Informusik</h3>
             <p>Share what's new and life moments with <br> your friends. </p>
         </div>
 

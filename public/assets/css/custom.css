@@ -1,0 +1,71 @@
+.audio-player {
+    width: 100%;
+    background-color: bisque;
+    height: 60px;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999;
+    margin-top: 60px;
+    margin-top: calc(100% - 60px);
+}
+
+@media (min-width: 960px) {
+    .main_content {
+        
+    }
+    .audio-player {
+        background-color: cornflowerblue;
+        margin: 0;
+        width: 80%;
+    }
+}
+
+.chat-plus-btn {
+    left: 50px;
+    bottom: 100px;
+}
+.audio-player .contentor {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.img-cantor {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+#progressBar {
+    width: 50%;
+    height: 10px;
+    margin: auto;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#progress {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to left, #8f1e8f, transparent);
+}
+
+#currentTime {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.audio-player button {
+    margin-left: 10px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+}
+
+#volumeSlider {
+    width: 10%;
+    background: #8f1e8f; /* Cor de fundo do controle deslizante */
+    border: none; /* Remova a borda padrão */
+    color: #8f1e8f;
+}

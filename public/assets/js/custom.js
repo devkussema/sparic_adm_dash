@@ -39,11 +39,11 @@ $(document).ready(function() {
                     var li = $('<li></li>');
 
                     var a = $('<a href="#"></a>');
-                    var notificationAvatar = $('<span class="notification-avatar"><img src="{{ asset(storage/' +  notificacao.userDe + ') }}" alt=""></span>');
+                    var notificationAvatar = $('<span class="notification-avatar"><img src="' +  notificacao + '" alt=""></span>');
                     var notificationIcon = $('<span class="notification-icon bg-gradient-primary"><i class="icon-feather-thumbs-up"></i></span>');
 
                     var notificationText = $('<span class="notification-text"></span>');
-                    var strong = $('<strong>' + notificacao.user_de + '</strong>');
+                    var strong = $('<strong>' + notificacao.de + '</strong>');
                     var likeText = notificacao.texto + ' <span class="text-primary">' + notificacao.videoTitle + '</span>';
                     var timeAgo = '<br> <span class="time-ago">' + notificacao.timeAgo + '</span>';
 
@@ -63,3 +63,5 @@ $(document).ready(function() {
         }
     });
 });
+
+

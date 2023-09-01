@@ -7225,6 +7225,7 @@ header .opts_icon_link:hover {
   margin: auto;
   padding-bottom: 0;
   position: relative;
+  margin-bottom: 60px;
 }
 
 
@@ -7232,7 +7233,7 @@ header .opts_icon_link:hover {
   .main_content_inner {
     /* max-width: 1000px; */
     padding: 25px 0;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     animation: r;
   }
 

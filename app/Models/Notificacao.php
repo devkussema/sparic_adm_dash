@@ -18,8 +18,13 @@ class Notificacao extends Model
         'tipo'
     ];
 
-    public function userDe()
+    public function usuario_de()
     {
         return $this->belongsTo(User::class, 'user_de');
+    }
+
+    public function de()
+    {
+        return "Kussema";
     }
 }
