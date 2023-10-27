@@ -23,11 +23,13 @@
 
     <!-- Google font
     ================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js" integrity="sha512-g0etrk7svX8WYBp+ZDIqeenmkxQSXjRDTr08ie37rVFc99iXFGxmD0/SCt3kZ6sDNmr8sR0ISHkSAc/M8rQBqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    -->
+    <link rel="stylesheet" href="assets/js/jquery.min.js">
     <style>
         .lds-ring {
             display: inline-block;
@@ -101,7 +103,7 @@
             </form>-->
 
             @yield('conteudo')
-            <div class="audio-player">
+            <!--<div class="audio-player">
                 <div class="contentor">
                     <div class="img-fluid">
                         <img class="img-cantor" src="{{ asset('assets/images/avatars/avatar-1.jpg') }}">
@@ -118,7 +120,7 @@
                     <input type="range" id="volumeSlider" min="0" max="1" step="0.02" value="1">
                     <span id="currentTime">0:00</span>
                 </div>
-            </div>
+            </div>-->
         </div>
         <!-- Chat sidebar -->
         @include('partials/chat_sidebar')

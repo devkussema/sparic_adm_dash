@@ -1,5 +1,7 @@
 @extends('layout.auth')
 
+@section("titulo", "Iniciar sessão")
+
 @section('conteudo')
     <div class="uk-child-width-1-2@m uk-grid-collapse bg-gradient-primary" uk-grid>
 
@@ -13,8 +15,8 @@
         <!-- column two -->
         <div class="uk-card-default px-5 py-8">
             <div class="mb-4 uk-text-center">
-                <h2 class="mb-0"> Welcome back</h3>
-                <p class="my-2">Login to manage your account.</p>
+                <h2 class="mb-0"> Bem-vindo de volta</h3>
+                <p class="my-2">Entre para gerir a tua conta.</p>
             </div>
 
             @if (session('error'))
@@ -44,19 +46,19 @@
                         <span class="uk-form-icon">
                             <i class="icon-feather-mail"></i>
                         </span>
-                        <input name="email" class="uk-input" type="text" placeholder="">
+                        <input name="email" required class="uk-input" type="text" placeholder="">
                     </div>
                 </div>
 
 
                 <div class="uk-form-group">
-                    <label class="uk-form-label"> Password</label>
+                    <label class="uk-form-label"> Senha</label>
 
                     <div class="uk-position-relative w-100">
                         <span class="uk-form-icon">
                             <i class="icon-feather-lock"></i>
                         </span>
-                        <input name="password" class="uk-input" type="password" placeholder="********">
+                        <input name="password" required class="uk-input" type="password" placeholder="********">
                     </div>
 
                 </div>
@@ -66,10 +68,10 @@
                         <p> Não tens uma conta <a href="{{ route('registar') }}">Crie uma!</a></p>
                     </div>
                     <div class="uk-width-auto@s">
-                        <button type="submit" class="button primary">Get Started</button>
+                        <button type="submit" class="button primary">Entrar</button>
                     </div>
                 </div>
             </form>
-        </div><!--  End column two -->
+        </div>
     </div>
 @endsection
